@@ -2,7 +2,6 @@ package org.raisinz;
 
 public class Main {
 
-    private static int count=0;
     public static void main(String[] args) {
 
         int[] sortedArr={10,20,30,30,44,44,55,60,60,70};
@@ -12,11 +11,10 @@ public class Main {
            if(sortedArr[i] != sortedArr[i+1]){
                 resultArr[j]=sortedArr[i];
                 j++;
-                count++;
            }
         }
         resultArr[j]=sortedArr[sortedArr.length-1];
-        for (int i = 0; i <=count ; i++) {
+        for (int i = 0; i <=j ; i++) {
             System.out.println(resultArr[i]);
         }
     }
