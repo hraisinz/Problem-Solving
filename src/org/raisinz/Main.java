@@ -2,7 +2,7 @@ package org.raisinz;
 
 public class Main {
 
-    private static int count;
+    private static int count=0;
     public static void main(String[] args) {
 
         int[] sortedArr={10,20,30,30,44,44,55,60,60,70};
