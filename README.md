@@ -1,6 +1,6 @@
 # Problem-Solving
 Java Problem Solving
-Removing duplicate from Array using Extra Space and Constant Space
-Linear Search - Searching an element from an array
-Binary Search - Searching an element from an array
+1) Removing duplicate from Array using Extra Space and Constant Space.
+(2) Linear Search - Searching an element from an array
+(3) Binary Search - Searching an element from an array
 
