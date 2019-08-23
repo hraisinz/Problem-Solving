@@ -15,12 +15,15 @@ public class Removeduplicates {
             }
         }
         sortedArr[current]=sortedArr[size];
+        for (int i = current+1; i <sortedArr.length; i++) {
+            sortedArr[i]=0;
+        }
         currentIndex=current;
         resultArr=sortedArr;
     }
 
     public void getArray(){
-        for (int i = 0; i <resultArr.length; i++) {
+        for (int i = 0; i <= currentIndex; i++) {
             System.out.println(resultArr[i]);
         }
     }
