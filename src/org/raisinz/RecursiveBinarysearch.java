@@ -11,16 +11,18 @@ public class RecursiveBinarysearch {
         else return binarySearch(values,middle+1,last,element);
     }
 
+    public void elementFound(int found){
+        if(found == -1) System.out.println("Element Not Found");
+        else System.out.println("Element Found at Index :"+found);
+    }
+
     public static void main(String[] args) {
         int values[] = {10,20,30,40,50,60};
         int element = 50;
         int intial=0;
         int last=values.length-1;
-
         RecursiveBinarysearch recursiveBinarysearch = new RecursiveBinarysearch();
-        int found = recursiveBinarysearch.binarySearch(values, intial, last, element);
-        if(found == -1) System.out.println("Element Not Found");
-        else System.out.println("Element Found at Index :"+found);
+        recursiveBinarysearch.elementFound(recursiveBinarysearch.binarySearch(values, intial, last, element));
 
     }
 }
