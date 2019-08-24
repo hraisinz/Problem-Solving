@@ -11,12 +11,11 @@ public class Binarysearch {
     public int binarySearch(int[] values,int element){
         int intial=0;
         int last=values.length-1;
-        int middle=(intial+last)/divValue;
         while (intial <= last){
+            int middle=(intial+last)/divValue;
             if(values[middle] == element) return middle;
             else if(element < values[middle]) last=middle-1;
             else intial=middle+1;
-            middle=(intial+last)/divValue;
         }
         return -1;
     }
