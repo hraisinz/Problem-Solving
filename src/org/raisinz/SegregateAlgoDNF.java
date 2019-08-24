@@ -1,6 +1,6 @@
 package org.raisinz;
 
-public class SegregateAlgo {
+public class SegregateAlgoDNF {
 
     public void segregate(int[] values){
         int start=0;
@@ -33,8 +33,8 @@ public class SegregateAlgo {
 
     public static void main(String[] args) {
         int[] arr={0,1,1,0,1,2,1,2,0,0,0,1};
-        SegregateAlgo segregateAlgo = new SegregateAlgo();
-        segregateAlgo.segregate(arr);
+        SegregateAlgoDNF segregateAlgoDNF = new SegregateAlgoDNF();
+        segregateAlgoDNF.segregate(arr);
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
