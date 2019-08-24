@@ -4,4 +4,5 @@ Java Problem Solving
 (2) Linear Search - Searching an element from an array
 (3) Binary Search 
 (4) Recursive Binary Search
+(5) Count occurences of elements in sorted array with duplicates using Binary Search
 
