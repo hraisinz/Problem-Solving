@@ -7,4 +7,5 @@ Java Problem Solving
 (5) Count occurences of elements in sorted array with duplicates using Binary Search
 (6) Segregate 0's and 1's in array
 (7) Segregate 0's,1's and 2's in array
+(8) Moving all negative numbers to beginning and positive numbers to end in Array
 
