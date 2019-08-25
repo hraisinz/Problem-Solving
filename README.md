@@ -9,4 +9,4 @@ Java Problem Solving
 * Segregate 0's,1's and 2's in array
 * Moving all negative numbers to beginning and positive numbers to end in Array
 * Rotating an array
-
+* Covert an array into Zig-Zag pattern
