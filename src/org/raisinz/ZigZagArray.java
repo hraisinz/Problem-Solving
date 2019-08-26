@@ -10,20 +10,19 @@ public class ZigZagArray {
         for (int i = 0; i <= size; i++) {
 
             if(flag){
-                if(values[i] > values[i+1]){
-                    temp=values[i];
-                    values[i]=values[i+1];
-                    values[i+1]=temp;
-                }
-            }else{
-                if(values[i] < values[i+1]){
-                    temp=values[i];
-                    values[i]=values[i+1];
-                    values[i+1]=temp;
-                }
+                if(values[i] > values[i+1]) swapElement(values,i,i+1);
+            }
+            else{
+                if(values[i] < values[i+1]) swapElement(values,i,i+1);
             }
             flag = !flag;
         }
+    }
+
+    private void swapElement(int[] values,int v1,int v2){
+        int temp=values[v1];
+        values[v1]=values[v2];
+        values[v2]=temp;
     }
 
     public void getZigZagArray(int[] values){
@@ -32,7 +31,7 @@ public class ZigZagArray {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
 
         int[] arr={3,4,6,2,1,8,9,10};
         ZigZagArray zigZagArray = new ZigZagArray();
