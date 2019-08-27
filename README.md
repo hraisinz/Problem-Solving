@@ -14,3 +14,4 @@ Java Problem Solving
 * Fibonacci series without recursion
 * Fibonacci series with recursion
 * Calculate the power of given number using Recursion
+* Modular Exponentiation
