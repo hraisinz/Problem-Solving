@@ -83,7 +83,6 @@ public class LinkedListNthPosition {
         }
     }
 
-
     public static void main(String[] args) {
 
         LinkedListNthPosition linkedListNthPosition = new LinkedListNthPosition();
