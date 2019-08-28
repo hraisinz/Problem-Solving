@@ -70,6 +70,53 @@ public class LinkedListDeleteNode {
         }
     }
 
+    public int getSize(){
+        if(head == null){
+            return 0;
+        }
+        int count=0;
+        Node current=head;
+        while (current != null){
+            count++;
+            current=current.next;
+        }
+        return count;
+    }
+
+    public void deleteFromMiddle(){
+
+        if(head == null){
+            System.out.println("List is Empty");
+            return;
+        }
+        else{
+            Node temp;
+            Node current;
+            int size=getSize();
+            int count=(size % 2 == 0)?(size/2):((size+1)/2);
+            if(head != tail){
+                temp=head;
+                current=null;
+                for (int i = 0; i < count-1; i++) {
+                    current=temp;
+                    temp=temp.getNext();
+                }
+                if(current != null){
+                    current.next=temp.next;
+                    temp=null;
+                }
+                else{
+                    head=temp.next;
+                    tail=temp.next;
+                    temp=null;
+                }
+            }else{
+                head=null;
+                tail=null;
+            }
+        }
+    }
+
     public void getList(){
         Node temp=head;
         if(head == null){
@@ -92,9 +139,12 @@ public class LinkedListDeleteNode {
         linkedListDeleteNode.inserNodeAtEnd(60);
         linkedListDeleteNode.getList();
         linkedListDeleteNode.deleteFromBegining();
+        linkedListDeleteNode.deleteFromLast();
+        linkedListDeleteNode.deleteFromLast();
         System.out.println("\n");
-        linkedListDeleteNode.deleteFromLast();
-        linkedListDeleteNode.deleteFromLast();
+        linkedListDeleteNode.getList();
+        linkedListDeleteNode.deleteFromMiddle();
+        System.out.println("\n");
         linkedListDeleteNode.getList();
 
     }
