@@ -1,7 +1,9 @@
 package org.raisinz;
 
 public class LinkedListNthPosition {
+
     private Node head;
+    private Node tail;
 
     private class Node{
         private int data;
@@ -34,7 +36,7 @@ public class LinkedListNthPosition {
         return count;
     }
 
-    public void insertNode(int data, int position){
+    public void insertNodeAtNth(int data, int position){
 
         Node node = new Node(data);
 
@@ -72,6 +74,30 @@ public class LinkedListNthPosition {
             previous.next = node;
     }
 
+
+
+    public void insertNodeAtMiddle(int data){
+
+        Node node=new Node(data);
+        if(head == null){
+            head=node;
+            tail=node;
+        }
+        else{
+            int size=getSize();
+            int count=(size % 2 ==0)?(size/2) : ((size+1)/2);
+            Node temp=head;
+            Node current=null;
+            for (int i = 0; i < count; i++) {
+                current=temp;
+                temp=temp.next;
+            }
+            current.next=node;
+            node.next=temp;
+
+        }
+    }
+
     public void getList() {
         Node temp = head;
         if (head == null) {
@@ -86,11 +112,13 @@ public class LinkedListNthPosition {
     public static void main(String[] args) {
 
         LinkedListNthPosition linkedListNthPosition = new LinkedListNthPosition();
-        linkedListNthPosition.insertNode(32,1);
-        linkedListNthPosition.insertNode(33,2);
-        linkedListNthPosition.insertNode(34,3);
-        linkedListNthPosition.insertNode(35,4);
-        linkedListNthPosition.insertNode(36,3);
+        linkedListNthPosition.insertNodeAtNth(32,1);
+        linkedListNthPosition.insertNodeAtNth(33,2);
+        linkedListNthPosition.insertNodeAtNth(34,3);
+        linkedListNthPosition.insertNodeAtNth(35,4);
+        linkedListNthPosition.insertNodeAtNth(36,5);
+        linkedListNthPosition.insertNodeAtNth(37,6);
+        linkedListNthPosition.insertNodeAtMiddle(100);
         linkedListNthPosition.getList();
 
     }

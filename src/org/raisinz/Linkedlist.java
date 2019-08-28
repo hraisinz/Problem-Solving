@@ -22,7 +22,7 @@ public class Linkedlist {
         }
     }
 
-    public void inserNode(int data){
+    public void inserNodeAtEnd(int data){
 
         Node node = new Node(data);
 
@@ -49,10 +49,10 @@ public class Linkedlist {
     }
     public static void main(String[] args) {
         Linkedlist linkedlist = new Linkedlist();
-        linkedlist.inserNode(10);
-        linkedlist.inserNode(20);
-        linkedlist.inserNode(30);
-        linkedlist.inserNode(40);
+        linkedlist.inserNodeAtEnd(10);
+        linkedlist.inserNodeAtEnd(20);
+        linkedlist.inserNodeAtEnd(30);
+        linkedlist.inserNodeAtEnd(40);
         linkedlist.getList();
     }
 }
