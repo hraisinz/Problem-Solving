@@ -20,3 +20,4 @@ Java Problem Solving
 * Inserting a Node at the end of Linkedlist without traversing the list(Time Complexity)
 * Inserting a Node in Linkedlist at the Nth position
 * Inserting a new Node at the middle of the linkedlist
+* Deleting a node from the beginning of the linkedlist
