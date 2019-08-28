@@ -22,3 +22,4 @@ Java Problem Solving
 * Inserting a new Node at the middle of the linkedlist
 * Deleting a node from the beginning of the linkedlist
 * Deleting a node from the end of the linkedlist
+* Deleting a node from the middle of the linkedlist
