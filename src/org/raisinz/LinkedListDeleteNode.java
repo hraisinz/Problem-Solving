@@ -50,6 +50,26 @@ public class LinkedListDeleteNode {
         }
     }
 
+
+    public void deleteFromLast(){
+        if(head == null){
+            System.out.println("List is Empty");
+            return;
+        }
+        else if(head != tail){
+            Node current=head;
+            while (current.getNext() != tail){
+                current=current.getNext();
+            }
+            tail=current;
+            tail.next=null;
+        }
+        else{
+            head=null;
+            tail=null;
+        }
+    }
+
     public void getList(){
         Node temp=head;
         if(head == null){
@@ -68,9 +88,14 @@ public class LinkedListDeleteNode {
         linkedListDeleteNode.inserNodeAtEnd(20);
         linkedListDeleteNode.inserNodeAtEnd(30);
         linkedListDeleteNode.inserNodeAtEnd(40);
+        linkedListDeleteNode.inserNodeAtEnd(50);
+        linkedListDeleteNode.inserNodeAtEnd(60);
         linkedListDeleteNode.getList();
         linkedListDeleteNode.deleteFromBegining();
         System.out.println("\n");
+        linkedListDeleteNode.deleteFromLast();
+        linkedListDeleteNode.deleteFromLast();
         linkedListDeleteNode.getList();
+
     }
 }

@@ -1,6 +1,6 @@
 package org.raisinz;
 
-public class Linkedlist {
+public class LinkedlistInsertNodeAtEnd {
 
     private Node head;
 
@@ -48,7 +48,7 @@ public class Linkedlist {
         }
     }
     public static void main(String[] args) {
-        Linkedlist linkedlist = new Linkedlist();
+        LinkedlistInsertNodeAtEnd linkedlist = new LinkedlistInsertNodeAtEnd();
         linkedlist.inserNodeAtEnd(10);
         linkedlist.inserNodeAtEnd(20);
         linkedlist.inserNodeAtEnd(30);
