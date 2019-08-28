@@ -18,3 +18,4 @@ Java Problem Solving
 * Calculate the power of given number using Recursion(Time Complexity)
 * Inserting a node at the end of the Linkedlist
 * Inserting a Node at the end of Linkedlist without traversing the list(Time Complexity)
+* Inserting a Node in Linkedlist at the Nth position
