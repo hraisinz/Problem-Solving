@@ -27,3 +27,4 @@ Java Problem Solving
 * Reverse a linked list using iterative method
 * Find a middle of Linkedlist
 * Find the length of Linkedlist
+* Searching an element in Linkedlist using itrative method
