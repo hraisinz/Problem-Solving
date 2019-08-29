@@ -44,6 +44,14 @@ public class LinkedlistSearchElement {
         return false;
     }
 
+
+    public boolean searchElementRecursively(int element){
+        if(head == null) return false;
+        if(head.data == element) return true;
+        head=head.next;
+        return searchElementRecursively(element);
+    }
+
     public void getList(){
         Node temp=head;
         if(head == null){
@@ -64,6 +72,6 @@ public class LinkedlistSearchElement {
         linkedlistSearchElement.inserNodeAtEnd(40);
         linkedlistSearchElement.inserNodeAtEnd(50);
         System.out.println(linkedlistSearchElement.searchElement(30));
-
+        System.out.println(linkedlistSearchElement.searchElementRecursively(60));
     }
 }
