@@ -1,6 +1,6 @@
 package org.raisinz;
 
-public class LinkedlistFindMiddle {
+public class LinkedlistFindLength {
 
     private Node head;
     private Node tail;
@@ -35,16 +35,18 @@ public class LinkedlistFindMiddle {
         }
     }
 
-    public int getMiddleNode(){
-        Node p=head;
-        Node q=head;
-        while ( q != null && q.next!=null){
-            p=p.next;
-            q=q.next.next;
-        }
-        return p.getData();
 
+    private int getLengthRecursive(Node node){
+
+        if(node == null) return 0;
+        return 1+getLengthRecursive(node.next);
     }
+
+    public int getLength(){
+        return getLengthRecursive(head);
+    }
+
+
 
     public void getList(){
         Node temp=head;
@@ -57,15 +59,14 @@ public class LinkedlistFindMiddle {
         }
     }
 
-
     public static void main(String[] args) {
-        LinkedlistFindMiddle linkedlistFindMiddle = new LinkedlistFindMiddle();
-        linkedlistFindMiddle.inserNodeAtEnd(10);
-        linkedlistFindMiddle.inserNodeAtEnd(20);
-        linkedlistFindMiddle.inserNodeAtEnd(30);
-        linkedlistFindMiddle.inserNodeAtEnd(40);
-        linkedlistFindMiddle.inserNodeAtEnd(50);
-        System.out.println(linkedlistFindMiddle.getMiddleNode());
 
+        LinkedlistFindLength linkedlistFindLength = new LinkedlistFindLength();
+        linkedlistFindLength.inserNodeAtEnd(10);
+        linkedlistFindLength.inserNodeAtEnd(20);
+        linkedlistFindLength.inserNodeAtEnd(30);
+        linkedlistFindLength.inserNodeAtEnd(40);
+        linkedlistFindLength.inserNodeAtEnd(50);
+        System.out.println(linkedlistFindLength.getLength());
     }
 }
