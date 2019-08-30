@@ -4,7 +4,7 @@ public class LinkedlistNumberOccurence {
 
     private Node head;
     private Node tail;
-
+    private int countRec;
     private class Node{
         private int data;
         private Node next;
@@ -48,6 +48,13 @@ public class LinkedlistNumberOccurence {
         return count;
     }
 
+    public int countRecursive(int num){
+        if(head == null) return countRec;
+        if(head.data == num) countRec++;
+        head=head.getNext();
+        return countRecursive(num);
+    }
+
     public static void main(String[] args) {
 
         LinkedlistNumberOccurence linkedlistNumberOccurence = new LinkedlistNumberOccurence();
@@ -58,6 +65,7 @@ public class LinkedlistNumberOccurence {
         linkedlistNumberOccurence.inserNodeAtEnd(30);
         linkedlistNumberOccurence.inserNodeAtEnd(10);
         System.out.println(linkedlistNumberOccurence.count(10));
+        System.out.println(linkedlistNumberOccurence.countRecursive(10));
 
     }
 }
