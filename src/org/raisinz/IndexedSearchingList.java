@@ -46,6 +46,31 @@ public class IndexedSearchingList {
         return 0;
     }
 
+    public int searchIndexRecursive(int index){
+
+        int size=getSize();
+        int count=1;
+        if(index == 0 || index<0 ||index > (size+1)) return 0;
+        if(count == index) return head.getData();
+        head=head.getNext();
+        return searchIndexRecursive(index-1);
+
+    }
+
+    public int getSize(){
+        if(head == null){
+            return 0;
+        }
+        int count=0;
+        Node current=head;
+        while (current != null){
+            count++;
+            current=current.next;
+        }
+        return count;
+    }
+
+
     public static void main(String[] args) {
 
         IndexedSearchingList indexedSearchingList = new IndexedSearchingList();
@@ -55,5 +80,6 @@ public class IndexedSearchingList {
         indexedSearchingList.inserNodeAtEnd(40);
         indexedSearchingList.inserNodeAtEnd(50);
         System.out.println(indexedSearchingList.searchIndex(3));
+        System.out.println(indexedSearchingList.searchIndexRecursive(4));
     }
 }
