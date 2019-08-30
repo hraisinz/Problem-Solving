@@ -32,3 +32,4 @@ Java Problem Solving
 * Searching Nth Node in Linkedlist using iterative method
 * Searching Nth Node in Linkedlist using recursion
 * Getting Nth node from the end of a Linkedlist
+* Count the number of times given element occurs in a Linkedlist
