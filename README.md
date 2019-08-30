@@ -31,3 +31,4 @@ Java Problem Solving
 * Searching an element in Linkedlist using recursion
 * Searching Nth Node in Linkedlist using iterative method
 * Searching Nth Node in Linkedlist using recursion
+* Getting Nth node from the end of a Linkedlist
