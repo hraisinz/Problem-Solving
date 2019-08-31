@@ -34,3 +34,4 @@ Java Problem Solving
 * Getting Nth node from the end of a Linkedlist
 * Count the number of times given element occurs in a Linkedlist using iterative method
 * Count the number of times given element occurs in a Linkedlist using recursion
+* Moving last node to front in a Linkedlist
