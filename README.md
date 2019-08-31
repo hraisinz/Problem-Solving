@@ -35,3 +35,4 @@ Java Problem Solving
 * Count the number of times given element occurs in a Linkedlist using iterative method
 * Count the number of times given element occurs in a Linkedlist using recursion
 * Moving last node to front in a Linkedlist
+* Checking the length is  even or odd of Linkedlist without counting
