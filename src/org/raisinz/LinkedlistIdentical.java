@@ -38,14 +38,25 @@ public class LinkedlistIdentical {
     public boolean checkIdentical(LinkedlistIdentical node){
         Node first=head;
         Node second=node.head;
-
         while (first != null && second != null){
             if(first.getData() != second.getData()) return false;
             first=first.getNext();
             second=second.getNext();
         }
-
         return (first == null && second == null);
+    }
+
+
+    private boolean checkIdenticalRecursive(Node first,Node second){
+
+        if(first ==null && second ==null) return true;
+        if(first != null && second != null) return (first.getData() == second.getData() && checkIdenticalRecursive(first.getNext(),second.getNext()));
+        return false;
+    }
+
+    public boolean checkIdenticalList(LinkedlistIdentical list){
+
+        return checkIdenticalRecursive(this.head,list.head);
     }
 
     public static void main(String[] args) {
@@ -59,5 +70,6 @@ public class LinkedlistIdentical {
         linkedlistIdentical2.inserNodeAtEnd(12);
         linkedlistIdentical2.inserNodeAtEnd(13);
         System.out.println(linkedlistIdentical1.checkIdentical(linkedlistIdentical2));
+        System.out.println(linkedlistIdentical1.checkIdenticalList(linkedlistIdentical2));
     }
 }
