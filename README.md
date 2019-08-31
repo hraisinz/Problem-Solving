@@ -38,3 +38,4 @@ Java Problem Solving
 * Checking the length is  even or odd of Linkedlist without counting
 * Checking two Linkedlist are Identical or Not
 * Checking two Linkedlist are Identical or Not using recursion
+* Creating and Detecting loop in a Linkedlist
