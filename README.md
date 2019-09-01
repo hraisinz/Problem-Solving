@@ -45,3 +45,4 @@ Java Problem Solving
 * Find largest element of an array
 * Find Smallest element of an array
 * Find second largest element of an array
+* Find third largest element of an array
