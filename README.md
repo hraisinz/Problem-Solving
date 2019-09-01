@@ -42,3 +42,4 @@ Java Problem Solving
 * Selection Sort Algorithm
 * Bublle Sort Algorithm
 * Find dupliacte elements of an array
+* Find largest element of an array
