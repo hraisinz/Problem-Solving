@@ -43,3 +43,4 @@ Java Problem Solving
 * Bublle Sort Algorithm
 * Find dupliacte elements of an array
 * Find largest element of an array
+* Find Smallest element of an array
