@@ -44,3 +44,4 @@ Java Problem Solving
 * Find dupliacte elements of an array
 * Find largest element of an array
 * Find Smallest element of an array
+* Find second largest element of an array
