@@ -41,3 +41,4 @@ Java Problem Solving
 * Creating and Detecting loop in a Linkedlist
 * Selection Sort Algorithm
 * Bublle Sort Algorithm
+* Find dupliacte elements of an array
