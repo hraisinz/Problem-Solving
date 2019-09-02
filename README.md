@@ -47,3 +47,4 @@ Java Problem Solving
 * Find second largest element of an array
 * Find third largest element of an array
 * Find smallest element of an array
+* Find Second smallest element of an array
