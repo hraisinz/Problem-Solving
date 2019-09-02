@@ -1,6 +1,6 @@
-package org.raisinz;
+package org.raisinz.linkedList;
 
-public class LinkedlistFindMiddle {
+public class NthNodeEndOfLinkedlist {
 
     private Node head;
     private Node tail;
@@ -35,15 +35,26 @@ public class LinkedlistFindMiddle {
         }
     }
 
-    public int getMiddleNode(){
-        Node p=head;
-        Node q=head;
-        while ( q != null && q.next!=null){
-            p=p.next;
-            q=q.next.next;
-        }
-        return p.getData();
 
+    public int getNthfromEnd(int n){
+        int length=0;
+        Node temp=head;
+
+        while (temp != null){
+            temp=temp.getNext();
+            length++;
+        }
+
+        if(length<n || n==0){
+            System.out.println("Invalid Position");
+            return 0;
+        }
+
+        temp=head;
+        for (int i = 1; i < (length-n+1) ; i++) {
+            temp=temp.getNext();
+        }
+        return temp.getData();
     }
 
     public void getList(){
@@ -57,15 +68,15 @@ public class LinkedlistFindMiddle {
         }
     }
 
-
     public static void main(String[] args) {
-        LinkedlistFindMiddle linkedlistFindMiddle = new LinkedlistFindMiddle();
-        linkedlistFindMiddle.inserNodeAtEnd(10);
-        linkedlistFindMiddle.inserNodeAtEnd(20);
-        linkedlistFindMiddle.inserNodeAtEnd(30);
-        linkedlistFindMiddle.inserNodeAtEnd(40);
-        linkedlistFindMiddle.inserNodeAtEnd(50);
-        System.out.println(linkedlistFindMiddle.getMiddleNode());
+
+        NthNodeEndOfLinkedlist nthNodeEndOfLinkedlist = new NthNodeEndOfLinkedlist();
+        nthNodeEndOfLinkedlist.inserNodeAtEnd(10);
+        nthNodeEndOfLinkedlist.inserNodeAtEnd(20);
+        nthNodeEndOfLinkedlist.inserNodeAtEnd(30);
+        nthNodeEndOfLinkedlist.inserNodeAtEnd(40);
+        nthNodeEndOfLinkedlist.inserNodeAtEnd(50);
+        System.out.println(nthNodeEndOfLinkedlist.getNthfromEnd(3));
 
     }
 }

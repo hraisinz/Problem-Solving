@@ -1,6 +1,6 @@
-package org.raisinz;
+package org.raisinz.linkedList;
 
-public class LinkedlistLastToFront {
+public class ReverseLinkedlist {
 
     private Node head;
     private Node tail;
@@ -35,17 +35,17 @@ public class LinkedlistLastToFront {
         }
     }
 
-    public void moveToFront(){
-        if(head == null || head.next==null) return;
-        Node secondLast=null;
-        Node last=head;
-        while (last.next != null){
-            secondLast=last;
-            last=last.next;
+    public void reverseList(){
+        Node prev=null;
+        Node current=head;
+        Node next=null;
+        while (current != null){
+            next=current.next;
+            current.next=prev;
+            prev=current;
+            current=next;
         }
-        secondLast.next=null;
-        last.next=head;
-        head=last;
+        head=prev;
     }
 
     public void getList(){
@@ -61,14 +61,13 @@ public class LinkedlistLastToFront {
 
     public static void main(String[] args) {
 
-        LinkedlistLastToFront linkedlistLastToFront = new LinkedlistLastToFront();
-        linkedlistLastToFront.inserNodeAtEnd(1);
-        linkedlistLastToFront.inserNodeAtEnd(2);
-        linkedlistLastToFront.inserNodeAtEnd(3);
-        linkedlistLastToFront.inserNodeAtEnd(4);
-        linkedlistLastToFront.inserNodeAtEnd(5);
-        linkedlistLastToFront.moveToFront();
-        linkedlistLastToFront.getList();
-
+        ReverseLinkedlist reverseLinkedlist = new ReverseLinkedlist();
+        reverseLinkedlist.inserNodeAtEnd(10);
+        reverseLinkedlist.inserNodeAtEnd(20);
+        reverseLinkedlist.inserNodeAtEnd(30);
+        reverseLinkedlist.inserNodeAtEnd(40);
+        reverseLinkedlist.inserNodeAtEnd(50);
+        reverseLinkedlist.reverseList();
+        reverseLinkedlist.getList();
     }
 }

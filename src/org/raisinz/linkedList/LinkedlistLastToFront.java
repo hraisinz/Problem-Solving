@@ -1,6 +1,6 @@
-package org.raisinz;
+package org.raisinz.linkedList;
 
-public class NthNodeEndOfLinkedlist {
+public class LinkedlistLastToFront {
 
     private Node head;
     private Node tail;
@@ -35,26 +35,17 @@ public class NthNodeEndOfLinkedlist {
         }
     }
 
-
-    public int getNthfromEnd(int n){
-        int length=0;
-        Node temp=head;
-
-        while (temp != null){
-            temp=temp.getNext();
-            length++;
+    public void moveToFront(){
+        if(head == null || head.next==null) return;
+        Node secondLast=null;
+        Node last=head;
+        while (last.next != null){
+            secondLast=last;
+            last=last.next;
         }
-
-        if(length<n || n==0){
-            System.out.println("Invalid Position");
-            return 0;
-        }
-
-        temp=head;
-        for (int i = 1; i < (length-n+1) ; i++) {
-            temp=temp.getNext();
-        }
-        return temp.getData();
+        secondLast.next=null;
+        last.next=head;
+        head=last;
     }
 
     public void getList(){
@@ -70,13 +61,14 @@ public class NthNodeEndOfLinkedlist {
 
     public static void main(String[] args) {
 
-        NthNodeEndOfLinkedlist nthNodeEndOfLinkedlist = new NthNodeEndOfLinkedlist();
-        nthNodeEndOfLinkedlist.inserNodeAtEnd(10);
-        nthNodeEndOfLinkedlist.inserNodeAtEnd(20);
-        nthNodeEndOfLinkedlist.inserNodeAtEnd(30);
-        nthNodeEndOfLinkedlist.inserNodeAtEnd(40);
-        nthNodeEndOfLinkedlist.inserNodeAtEnd(50);
-        System.out.println(nthNodeEndOfLinkedlist.getNthfromEnd(3));
+        LinkedlistLastToFront linkedlistLastToFront = new LinkedlistLastToFront();
+        linkedlistLastToFront.inserNodeAtEnd(1);
+        linkedlistLastToFront.inserNodeAtEnd(2);
+        linkedlistLastToFront.inserNodeAtEnd(3);
+        linkedlistLastToFront.inserNodeAtEnd(4);
+        linkedlistLastToFront.inserNodeAtEnd(5);
+        linkedlistLastToFront.moveToFront();
+        linkedlistLastToFront.getList();
 
     }
 }

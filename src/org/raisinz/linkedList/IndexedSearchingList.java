@@ -1,4 +1,4 @@
-package org.raisinz;
+package org.raisinz.linkedList;
 
 public class IndexedSearchingList {
 

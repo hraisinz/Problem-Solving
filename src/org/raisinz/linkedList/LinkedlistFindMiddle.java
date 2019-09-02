@@ -1,6 +1,6 @@
-package org.raisinz;
+package org.raisinz.linkedList;
 
-public class LinkedlistTimeComplexity {
+public class LinkedlistFindMiddle {
 
     private Node head;
     private Node tail;
@@ -35,6 +35,17 @@ public class LinkedlistTimeComplexity {
         }
     }
 
+    public int getMiddleNode(){
+        Node p=head;
+        Node q=head;
+        while ( q != null && q.next!=null){
+            p=p.next;
+            q=q.next.next;
+        }
+        return p.getData();
+
+    }
+
     public void getList(){
         Node temp=head;
         if(head == null){
@@ -45,13 +56,16 @@ public class LinkedlistTimeComplexity {
             temp=temp.getNext();
         }
     }
-    public static void main(String[] args) {
 
-        LinkedlistTimeComplexity linkedlistTimeComplexity = new LinkedlistTimeComplexity();
-        linkedlistTimeComplexity.inserNodeAtEnd(10);
-        linkedlistTimeComplexity.inserNodeAtEnd(20);
-        linkedlistTimeComplexity.inserNodeAtEnd(30);
-        linkedlistTimeComplexity.inserNodeAtEnd(40);
-        linkedlistTimeComplexity.getList();
+
+    public static void main(String[] args) {
+        LinkedlistFindMiddle linkedlistFindMiddle = new LinkedlistFindMiddle();
+        linkedlistFindMiddle.inserNodeAtEnd(10);
+        linkedlistFindMiddle.inserNodeAtEnd(20);
+        linkedlistFindMiddle.inserNodeAtEnd(30);
+        linkedlistFindMiddle.inserNodeAtEnd(40);
+        linkedlistFindMiddle.inserNodeAtEnd(50);
+        System.out.println(linkedlistFindMiddle.getMiddleNode());
+
     }
 }

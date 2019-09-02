@@ -1,6 +1,6 @@
-package org.raisinz;
+package org.raisinz.linkedList;
 
-public class ReverseLinkedlist {
+public class LinkedlistTimeComplexity {
 
     private Node head;
     private Node tail;
@@ -35,19 +35,6 @@ public class ReverseLinkedlist {
         }
     }
 
-    public void reverseList(){
-        Node prev=null;
-        Node current=head;
-        Node next=null;
-        while (current != null){
-            next=current.next;
-            current.next=prev;
-            prev=current;
-            current=next;
-        }
-        head=prev;
-    }
-
     public void getList(){
         Node temp=head;
         if(head == null){
@@ -58,16 +45,13 @@ public class ReverseLinkedlist {
             temp=temp.getNext();
         }
     }
-
     public static void main(String[] args) {
 
-        ReverseLinkedlist reverseLinkedlist = new ReverseLinkedlist();
-        reverseLinkedlist.inserNodeAtEnd(10);
-        reverseLinkedlist.inserNodeAtEnd(20);
-        reverseLinkedlist.inserNodeAtEnd(30);
-        reverseLinkedlist.inserNodeAtEnd(40);
-        reverseLinkedlist.inserNodeAtEnd(50);
-        reverseLinkedlist.reverseList();
-        reverseLinkedlist.getList();
+        LinkedlistTimeComplexity linkedlistTimeComplexity = new LinkedlistTimeComplexity();
+        linkedlistTimeComplexity.inserNodeAtEnd(10);
+        linkedlistTimeComplexity.inserNodeAtEnd(20);
+        linkedlistTimeComplexity.inserNodeAtEnd(30);
+        linkedlistTimeComplexity.inserNodeAtEnd(40);
+        linkedlistTimeComplexity.getList();
     }
 }
