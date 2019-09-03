@@ -43,6 +43,18 @@ public class DoublyLinkedlistInsertNodeAtEnd {
 
     }
 
+    public void getReverseList(){
+        if(head == null){
+            System.out.println("List is Empty");
+            return;
+        }
+        Node temp=tail;
+        while(temp != null){
+            System.out.println(temp.getData());
+            temp=temp.prev;
+        }
+    }
+
     public void getList(){
         if(head == null){
             System.out.println("List is Empty");
@@ -65,5 +77,7 @@ public class DoublyLinkedlistInsertNodeAtEnd {
         doublyLinkedlistInsertNodeAtEnd.insertAtEnd(50);
         doublyLinkedlistInsertNodeAtEnd.insertAtEnd(60);
         doublyLinkedlistInsertNodeAtEnd.getList();
+        System.out.println("\n");
+        doublyLinkedlistInsertNodeAtEnd.getReverseList();
     }
 }
