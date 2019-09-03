@@ -50,3 +50,4 @@ Java Problem Solving
 * Find Second smallest element of an array
 * Implementation of Doubly Linkedlist,inserting node at Head
 * Implement Stack using Doubly Linkedlist
+* Inserting node at the End in Doubly Linkedlist
