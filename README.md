@@ -49,3 +49,4 @@ Java Problem Solving
 * Find smallest element of an array
 * Find Second smallest element of an array
 * Implementation of Doubly Linkedlist
+* Implement Stack using Doubly Linkedlist
