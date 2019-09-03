@@ -51,3 +51,4 @@ Java Problem Solving
 * Implementation of Doubly Linkedlist,inserting node at Head
 * Implement Stack using Doubly Linkedlist
 * Inserting node at the End in Doubly Linkedlist
+* Reversing Doubly Linkedlist
