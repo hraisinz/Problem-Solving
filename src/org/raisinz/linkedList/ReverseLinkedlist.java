@@ -39,6 +39,10 @@ public class ReverseLinkedlist {
         Node prev=null;
         Node current=head;
         Node next=null;
+        if(head == null){
+            System.out.println("List is Empty");
+            return;
+        }
         while (current != null){
             next=current.next;
             current.next=prev;
