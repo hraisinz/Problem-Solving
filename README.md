@@ -62,3 +62,4 @@ Java Problem Solving
 * Find the length of Doubly Linkedlist
 * Find the middle node of Doubly Linkedlist
 * Reverse a Doubly Linkedlist
+* Deleting node from head in a Doubly Linkedlist
