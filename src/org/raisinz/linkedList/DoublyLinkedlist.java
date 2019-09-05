@@ -39,6 +39,16 @@ public class DoublyLinkedlist {
         head=node;
     }
 
+    public void deleteFromHead(){
+        if(head== null){
+            System.out.println("List is Empty");
+            return;
+        }
+        Node temp=head;
+        head=head.getNext();
+        head.prev=null;
+    }
+
     private int getLengthRecursive(Node node){
         if(node == null) return 0;
         return 1+getLengthRecursive(node.next);
@@ -68,6 +78,7 @@ public class DoublyLinkedlist {
         doublyLinkedlist.insertAtHead(30);
         doublyLinkedlist.insertAtHead(50);
         doublyLinkedlist.insertAtHead(60);
+        doublyLinkedlist.deleteFromHead();
         doublyLinkedlist.getList();
         System.out.println("Length is : "+doublyLinkedlist.getLength());
     }
