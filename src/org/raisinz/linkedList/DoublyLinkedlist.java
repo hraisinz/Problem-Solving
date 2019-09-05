@@ -39,6 +39,15 @@ public class DoublyLinkedlist {
         head=node;
     }
 
+    private int getLengthRecursive(Node node){
+        if(node == null) return 0;
+        return 1+getLengthRecursive(node.next);
+    }
+
+    public int getLength(){
+        return getLengthRecursive(head);
+    }
+
     public void getList(){
         if(head == null){
             System.out.println("List is Empty");
@@ -60,5 +69,6 @@ public class DoublyLinkedlist {
         doublyLinkedlist.insertAtHead(50);
         doublyLinkedlist.insertAtHead(60);
         doublyLinkedlist.getList();
+        System.out.println("Length is : "+doublyLinkedlist.getLength());
     }
 }
