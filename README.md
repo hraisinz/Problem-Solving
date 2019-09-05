@@ -59,3 +59,4 @@ Java Problem Solving
 * Implementation of Circular Queue
 * Implement a queue using Linkedlist
 * Insertion Sort Algorithm
+* Find the length of Doubly Linkedlist
