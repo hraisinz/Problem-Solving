@@ -1,4 +1,4 @@
-package org.raisinz.sortings;
+package org.raisinz;
 
 public class Binarysearch {
 
