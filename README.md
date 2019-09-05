@@ -61,3 +61,4 @@ Java Problem Solving
 * Insertion Sort Algorithm
 * Find the length of Doubly Linkedlist
 * Find the middle node of Doubly Linkedlist
+* Reverse a Doubly Linkedlist
