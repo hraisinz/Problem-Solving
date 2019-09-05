@@ -58,3 +58,4 @@ Java Problem Solving
 * Array implementation of Queue
 * Implementation of Circular Queue
 * Implement a queue using Linkedlist
+* Insertion Sort Algorithm
