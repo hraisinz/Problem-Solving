@@ -63,3 +63,4 @@ Java Problem Solving
 * Find the middle node of Doubly Linkedlist
 * Reverse a Doubly Linkedlist
 * Deleting node from head in a Doubly Linkedlist
+* Moving last node to front in a Doubly Linkedlist
