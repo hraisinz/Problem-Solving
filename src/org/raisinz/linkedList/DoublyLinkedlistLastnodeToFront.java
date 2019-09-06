@@ -43,6 +43,20 @@ public class DoublyLinkedlistLastnodeToFront {
 
     }
 
+    public int getLength(){
+        Node temp=head;
+        int count=0;
+        if(head == null){
+            System.out.println("List is Empty");
+            return count;
+        }
+        while (temp != null){
+            count++;
+            temp=temp.getNext();
+        }
+        return count;
+    }
+
     public void movingLastNodeToFront(){
         if(head == null || head.next == null) return;
         tail.prev.next=null;
@@ -72,6 +86,7 @@ public class DoublyLinkedlistLastnodeToFront {
         doublyLinkedlistLastnodeToFront.insertAtEnd(30);
         doublyLinkedlistLastnodeToFront.insertAtEnd(40);
         doublyLinkedlistLastnodeToFront.insertAtEnd(50);
+        System.out.println("Length is : "+doublyLinkedlistLastnodeToFront.getLength());
         doublyLinkedlistLastnodeToFront.movingLastNodeToFront();
         doublyLinkedlistLastnodeToFront.getList();
     }
