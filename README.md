@@ -64,3 +64,4 @@ Java Problem Solving
 * Reverse a Doubly Linkedlist
 * Deleting node from head in a Doubly Linkedlist
 * Moving last node to front in a Doubly Linkedlist
+* Find the length of a Doubly Linkedlist
