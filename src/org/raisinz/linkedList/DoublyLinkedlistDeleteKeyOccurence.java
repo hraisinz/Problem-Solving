@@ -55,18 +55,21 @@ public class DoublyLinkedlistDeleteKeyOccurence {
         }
     }
 
+    private void deleteNode(Node current){
+        if(current == null) return;
+        if(current == head) head=current.next;
+        if(current.next != null) current.next.prev=current.prev;
+        if(current.prev != null) current.prev.next=current.next;
+    }
+
     public void deleteAllOccurenceOfKey(int x){
         if(head == null){
             return;
         }
         Node current=head;
-        Node node;
         while (current != null){
             if(current.getData() == x){
-                if(current == null) return;
-                if(current == head) head=current.next;
-                if(current.next != null) current.next.prev=current.prev;
-                if(current.prev != null) current.prev.next=current.next;
+                deleteNode(current);
             }
             current=current.getNext();
         }
