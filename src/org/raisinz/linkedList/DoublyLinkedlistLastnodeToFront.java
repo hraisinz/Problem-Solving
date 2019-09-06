@@ -57,6 +57,16 @@ public class DoublyLinkedlistLastnodeToFront {
         return count;
     }
 
+    private int getLengthRecursive(Node node){
+        if(node == null) return 0;
+        return 1+getLengthRecursive(node.next);
+    }
+
+
+    public int length(){
+        return getLengthRecursive(head);
+    }
+
     public void movingLastNodeToFront(){
         if(head == null || head.next == null) return;
         tail.prev.next=null;
@@ -87,6 +97,7 @@ public class DoublyLinkedlistLastnodeToFront {
         doublyLinkedlistLastnodeToFront.insertAtEnd(40);
         doublyLinkedlistLastnodeToFront.insertAtEnd(50);
         System.out.println("Length is : "+doublyLinkedlistLastnodeToFront.getLength());
+        System.out.println("Length is : "+doublyLinkedlistLastnodeToFront.length());
         doublyLinkedlistLastnodeToFront.movingLastNodeToFront();
         doublyLinkedlistLastnodeToFront.getList();
     }
