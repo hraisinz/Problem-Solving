@@ -45,12 +45,8 @@ public class DoublyLinkedlistLastnodeToFront {
 
     public void movingLastNodeToFront(){
         if(head == null || head.next == null) return;
-        Node temp=head;
-        while (temp.next != null){
-            temp=temp.next;
-        }
-        temp.prev.next=null;
-        temp.prev=null;
+        tail.prev.next=null;
+        tail.prev=null;
         tail.next=head;
         head.prev=tail;
         head=tail;
