@@ -66,4 +66,4 @@ Java Problem Solving
 * Moving last node to front in a Doubly Linkedlist
 * Find the length of a Doubly Linkedlist
 * Find the length of a Doubly Linkedlist using recursion
-* Delete all occurences of a given key in a Doubly Linkedlist
+* Delete all the occurences of a given key in a Doubly Linkedlist
