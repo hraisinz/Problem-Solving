@@ -73,8 +73,8 @@ public class DoublyLinkedlistInsertAtMiddle {
                 temp=temp.next;
             }
             node.next=current.next;
-            current.next=node;
             temp.prev=node;
+            current.next=node;
             node.prev=current;
 
         }
@@ -100,7 +100,6 @@ public class DoublyLinkedlistInsertAtMiddle {
         doublyLinkedlistInsertAtMiddle.insertAtEnd(20);
         doublyLinkedlistInsertAtMiddle.insertAtEnd(30);
         doublyLinkedlistInsertAtMiddle.insertAtEnd(40);
-        doublyLinkedlistInsertAtMiddle.insertAtEnd(50);
         doublyLinkedlistInsertAtMiddle.insertNodeAtMiddle(55);
         doublyLinkedlistInsertAtMiddle.getList();
 
