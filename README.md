@@ -69,3 +69,4 @@ Java Problem Solving
 * Delete all the occurences of a given key in a Doubly Linkedlist
 * Sum of digit of number using recursion
 * Insert node at middle in a doubly linkedlist
+* Binary Serach Tree Implementation
