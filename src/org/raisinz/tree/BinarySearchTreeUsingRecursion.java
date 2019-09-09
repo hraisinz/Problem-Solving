@@ -30,22 +30,12 @@ public class BinarySearchTreeUsingRecursion {
         public Node getRight() {
             return right;
         }
-
-
     }
 
     private Node insertRecursive(Node current,int data){
-
-        if(current == null) {
-            current=new Node(data);
-            return current;
-        }
-        if(data <= current.getData()){
-            current.left=insertRecursive(current.left,data);
-        }
-        else if(data >current.getData()){
-            current.right=insertRecursive(current.right,data);
-        }
+        if(current == null) return new Node(data);
+        if(data <= current.getData()) current.left=insertRecursive(current.left,data);
+        else if(data >current.getData()) current.right=insertRecursive(current.right,data);
         return current;
     }
 
