@@ -70,3 +70,4 @@ Java Problem Solving
 * Sum of digit of number using recursion
 * Insert node at middle in a doubly linkedlist
 * Binary Serach Tree Implementation using iterative method
+* Binary Serach Tree Implementation using recursion
