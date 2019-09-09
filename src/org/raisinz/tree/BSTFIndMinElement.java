@@ -56,6 +56,15 @@ public class BSTFIndMinElement {
         return current.getData();
     }
 
+    public int getMinRecursive(Node root){
+        if(root == null){
+            System.out.println("Tree is empty");
+            return -1;
+        }
+        else if(root.getLeft() == null) return root.getData();
+        return getMinRecursive(root.getLeft());
+    }
+
     public void getTree(Node root){
         if(root == null) return;
         getTree(root.getLeft());
@@ -75,6 +84,7 @@ public class BSTFIndMinElement {
         bstfIndMinElement.insert(20);
         bstfIndMinElement.insert(30);
         System.out.println("Min Element : "+bstfIndMinElement.getMin(bstfIndMinElement.getRoot()));
+        System.out.println("Min Element Using Recursion : "+bstfIndMinElement.getMinRecursive(bstfIndMinElement.getRoot()));
 
     }
 }
