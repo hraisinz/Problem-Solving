@@ -68,7 +68,10 @@ public class BSTSearchElement {
         bstSearchElement.insert(20);
         bstSearchElement.insert(30);
         bstSearchElement.getTree(bstSearchElement.getRoot());
-        System.out.println(bstSearchElement.search(bstSearchElement.getRoot(),5));
-        System.out.println(bstSearchElement.search(bstSearchElement.getRoot(),2));
+        int key=5;
+        boolean found = bstSearchElement.search(bstSearchElement.getRoot(), key);
+        if(found) System.out.println("Element found");
+        else System.out.println("Not Found");
+
     }
 }
