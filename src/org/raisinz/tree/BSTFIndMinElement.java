@@ -44,6 +44,10 @@ public class BSTFIndMinElement {
     }
 
     public int getMin(Node root){
+        if(root == null){
+            System.out.println("Tree is empty");
+            return -1;
+        }
         Node current=root;
         while (current.getLeft() != null)
         {
