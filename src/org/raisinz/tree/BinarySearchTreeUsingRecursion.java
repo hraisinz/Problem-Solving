@@ -37,16 +37,14 @@ public class BinarySearchTreeUsingRecursion {
     private Node insertRecursive(Node current,int data){
 
         if(current == null) {
-            return new Node(data);
+            current=new Node(data);
+            return current;
         }
         if(data <= current.getData()){
             current.left=insertRecursive(current.left,data);
         }
         else if(data >current.getData()){
             current.right=insertRecursive(current.right,data);
-        }
-        else{
-            return current;
         }
         return current;
     }
