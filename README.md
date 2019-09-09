@@ -75,3 +75,4 @@ Java Problem Solving
 * Find min element in a binary search tree
 * Find min element in a Binary Search Tree using recursion
 * Find max element in a binary search tree
+* Find max element in a binary search tree using recursion
