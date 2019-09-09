@@ -56,6 +56,14 @@ public class BSTFIndMaxElement {
         return current.getData();
     }
 
+    public int getMaxRecursive(Node root){
+        if(root == null){
+            System.out.println("Tree is empty");
+            return -1;
+        }
+        else if(root.getRight() == null) return root.getData();
+        return getMaxRecursive(root.getRight());
+    }
     public void getTree(Node root){
         if(root == null) return;
         getTree(root.getLeft());
@@ -74,6 +82,7 @@ public class BSTFIndMaxElement {
         bstfIndMaxElement.insert(20);
         bstfIndMaxElement.insert(30);
         System.out.println("Max Element : "+bstfIndMaxElement.getMax(bstfIndMaxElement.getRoot()));
+        System.out.println("Max Element using recursion : "+bstfIndMaxElement.getMaxRecursive(bstfIndMaxElement.getRoot()));
 
     }
 }
