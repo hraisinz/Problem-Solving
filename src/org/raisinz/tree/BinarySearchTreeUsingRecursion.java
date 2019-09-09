@@ -44,11 +44,11 @@ public class BinarySearchTreeUsingRecursion {
     }
 
     public void getTree(Node root){
-        if(root != null){
+        if(root == null) return;
             getTree(root.getLeft());
             System.out.println(" "+root.getData());
             getTree(root.getRight());
-        }
+
     }
 
     public static void main(String[] args) {
