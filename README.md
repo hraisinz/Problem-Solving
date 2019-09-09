@@ -73,3 +73,4 @@ Java Problem Solving
 * Binary Serach Tree Implementation using recursion
 * Searching an element in a Binary Search Tree
 * Find min element in a binary search tree
+* Find min element in a Binary Search Tree using recursion
