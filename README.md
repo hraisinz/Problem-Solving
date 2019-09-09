@@ -71,3 +71,4 @@ Java Problem Solving
 * Insert node at middle in a doubly linkedlist
 * Binary Serach Tree Implementation using iterative method
 * Binary Serach Tree Implementation using recursion
+* Searching an element in a Binary Search Tree
