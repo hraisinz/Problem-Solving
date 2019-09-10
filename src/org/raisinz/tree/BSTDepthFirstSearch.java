@@ -59,6 +59,14 @@ public class BSTDepthFirstSearch {
         getInOrder(root.getRight());
 
     }
+
+    public void getPostOrder(Node root){
+        if(root == null) return;
+        getPostOrder(root.getLeft());
+        getPostOrder(root.getRight());
+        System.out.println(" "+root.getData());
+    }
+
     public static void main(String[] args) {
 
         BSTDepthFirstSearch bstDepthFirstSearch = new BSTDepthFirstSearch();
@@ -73,5 +81,7 @@ public class BSTDepthFirstSearch {
         bstDepthFirstSearch.getPreOrder(bstDepthFirstSearch.getRoot());
         System.out.println("\nInorder");
         bstDepthFirstSearch.getInOrder(bstDepthFirstSearch.getRoot());
+        System.out.println("\nPostorder");
+        bstDepthFirstSearch.getPostOrder(bstDepthFirstSearch.getRoot());
     }
 }
