@@ -79,3 +79,4 @@ Java Problem Solving
 * Find the height of  a binary search tree
 * Level Order Traversal a Binary Search Tree
 * Preorder Binary Tree Traversal
+* Inorder Binary Tree Traversal
