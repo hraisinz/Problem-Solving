@@ -32,6 +32,10 @@ public class BSTLevelorderIterative {
         public Node getRight() {
             return right;
         }
+
+        boolean isLeaf(){
+            return left==null ? right == null :false;
+        }
     }
 
     private Node insertRecursive(Node current,int data){
@@ -76,18 +80,42 @@ public class BSTLevelorderIterative {
             }
         }
     }
+
+    public void getPostorder(){
+        System.out.println("\nPostorder");
+        Stack<Node> stack = new Stack<>();
+        stack.push(root);
+        while (! stack.isEmpty()){
+            Node current = stack.peek();
+            if(current.isLeaf()){
+                Node node = stack.pop();
+                System.out.println(node.getData());
+            }else{
+                if(current.getRight() != null){
+                    stack.push(current.getRight());
+                    current.right=null;
+                }
+                if(current.getLeft() != null)
+                {
+                    stack.push(current.getLeft());
+                    current.left=null;
+                }
+            }
+        }
+    }
     public static void main(String[] args) {
 
-        BSTLevelorderIterative bstPreorderIterative = new BSTLevelorderIterative();
-        bstPreorderIterative.insert(10);
-        bstPreorderIterative.insert(6);
-        bstPreorderIterative.insert(25);
-        bstPreorderIterative.insert(4);
-        bstPreorderIterative.insert(5);
-        bstPreorderIterative.insert(20);
-        bstPreorderIterative.insert(30);
-        bstPreorderIterative.getInorder();
-        bstPreorderIterative.getPreorder();
+        BSTLevelorderIterative bstLevelorderIterative = new BSTLevelorderIterative();
+        bstLevelorderIterative.insert(10);
+        bstLevelorderIterative.insert(6);
+        bstLevelorderIterative.insert(25);
+        bstLevelorderIterative.insert(4);
+        bstLevelorderIterative.insert(5);
+        bstLevelorderIterative.insert(20);
+        bstLevelorderIterative.insert(30);
+        bstLevelorderIterative.getInorder();
+        bstLevelorderIterative.getPreorder();
+        bstLevelorderIterative.getPostorder();
 
     }
 }
