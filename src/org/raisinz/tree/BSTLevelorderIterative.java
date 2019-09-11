@@ -46,6 +46,7 @@ public class BSTLevelorderIterative {
     }
 
     public void getInorder(){
+        System.out.println("\nInorder");
         if(root == null) return;
         Stack<Node> stack = new Stack<>();
         Node current=root;
@@ -59,6 +60,22 @@ public class BSTLevelorderIterative {
             current=current.getRight();
         }
     }
+
+    public void getPreorder(){
+        System.out.println("\nPreorder");
+        Stack<Node> stack = new Stack<>();
+        stack.push(root);
+        while (! stack.isEmpty()){
+            Node current = stack.pop();
+            System.out.println(current.getData());
+            if(current.getRight() != null){
+                stack.push(current.getRight());
+            }
+            if(current.getLeft()!=null){
+                stack.push(current.getLeft());
+            }
+        }
+    }
     public static void main(String[] args) {
 
         BSTLevelorderIterative bstPreorderIterative = new BSTLevelorderIterative();
@@ -70,6 +87,7 @@ public class BSTLevelorderIterative {
         bstPreorderIterative.insert(20);
         bstPreorderIterative.insert(30);
         bstPreorderIterative.getInorder();
+        bstPreorderIterative.getPreorder();
 
     }
 }
