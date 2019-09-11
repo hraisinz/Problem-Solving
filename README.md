@@ -78,7 +78,7 @@ Java Problem Solving
 * Find max element in a binary search tree using recursion
 * Find the height of  a binary search tree
 * Level Order Traversal a Binary Search Tree
-* Preorder Binary Tree Traversal
-* Inorder Binary Tree Traversal
-* Postorder Binary Tree Traversal
+* Preorder Binary Tree Traversal using recursion
+* Inorder Binary Tree Traversal using recursion
+* Postorder Binary Tree Traversal using recursion
 * Pretorder Binary Tree Traversal using iterative method
