@@ -2,7 +2,7 @@ package org.raisinz.tree;
 
 import java.util.Stack;
 
-public class BSTPreorderIterative {
+public class BSTLevelorderIterative {
 
     private Node root;
 
@@ -61,7 +61,7 @@ public class BSTPreorderIterative {
     }
     public static void main(String[] args) {
 
-        BSTPreorderIterative bstPreorderIterative = new BSTPreorderIterative();
+        BSTLevelorderIterative bstPreorderIterative = new BSTLevelorderIterative();
         bstPreorderIterative.insert(10);
         bstPreorderIterative.insert(6);
         bstPreorderIterative.insert(25);
