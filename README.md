@@ -81,4 +81,4 @@ Java Problem Solving
 * Preorder Binary Tree Traversal using recursion
 * Inorder Binary Tree Traversal using recursion
 * Postorder Binary Tree Traversal using recursion
-* Pretorder Binary Tree Traversal using iterative method
+* Inorder Binary Tree Traversal using iterative method
