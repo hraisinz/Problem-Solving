@@ -99,6 +99,49 @@ public class DoublyLinkedlistInsertNthPosition {
 
     }
 
+    public void insertNthPositionOptimazation(int data,int position){
+        Node node = new Node(data);
+        int length = getLength();
+        if(position > length+1 || position<1){
+            System.out.println("Invalid Position");
+            return;
+
+        }
+        if(head == null){
+            if(position != 1){
+                System.out.println("Invalid Position");
+                return;
+            }else{
+                head=node;
+                node.prev=head;
+                return;
+            }
+        }
+        if(head != null && position == 1){
+            node.next=head;
+            head.next.prev=node;
+            head=node;
+            node.prev=head;
+            return;
+        }
+
+        Node current=head;
+        int n=1;
+        while (n<position){
+            current=current.getNext();
+            if(current == null){
+                node.prev=tail;
+                tail.next=node;
+                return;
+            }
+            n++;
+        }
+        node.next=current;
+        node.prev=current.prev;
+        current.prev.next=node;
+        current.prev=node;
+    }
+
     public void getList(){
         if(head == null){
             System.out.println("List is Empty");
