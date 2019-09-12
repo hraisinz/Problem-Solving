@@ -59,6 +59,7 @@ public class DoublyLinkedlistInsertNthPosition {
         if(position > length+1 || position<1){
             System.out.println("Invalid Position");
             return;
+
         }
         if(head == null){
             if(position != 1){
