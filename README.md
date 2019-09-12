@@ -86,3 +86,4 @@ Java Problem Solving
 * Postorder Binary Tree Traversal using iterative method
 * Inserting node at Nth position in a doubly linkedlist
 * Inserting node at Nth position in a doubly linkedlist with optimization
+* Reversing Doubly Linkedlist with optimization
