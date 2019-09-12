@@ -6,12 +6,12 @@ public class InsertionSort {
 
         for (int i = 1; i <arr.length ; i++) {
             int value=arr[i];
-            int t=i;
-            while (t>0 && arr[t-1]>value){
-                arr[t]=arr[t-1];
-                t=t-1;
+            int hole=i;
+            while (hole>0 && arr[hole-1]>value){
+                arr[hole]=arr[hole-1];
+                hole=hole-1;
             }
-            arr[t]=value;
+            arr[hole]=value;
         }
     }
     public void getElements(int[] arr){
