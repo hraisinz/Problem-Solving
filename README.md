@@ -85,3 +85,4 @@ Java Problem Solving
 * Preorder Binary Tree Traversal using iterative method
 * Postorder Binary Tree Traversal using iterative method
 * Inserting node at Nth position in a doubly linkedlist
+* Inserting node at Nth position in a doubly linkedlist with optimization
