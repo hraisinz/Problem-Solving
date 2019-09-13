@@ -88,7 +88,8 @@ public class DoublyLinkedlistFindPairOfSum {
         doublyLinkedlistFindPairOfSum.insertAtEnd(8);
         doublyLinkedlistFindPairOfSum.insertAtEnd(9);
         doublyLinkedlistFindPairOfSum.insertAtEnd(10);
-        doublyLinkedlistFindPairOfSum.findPairOfSum(8);
+        int key=8;
+        doublyLinkedlistFindPairOfSum.findPairOfSum(key);
 
 
     }
