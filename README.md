@@ -88,3 +88,4 @@ Java Problem Solving
 * Inserting node at Nth position in a doubly linkedlist
 * Inserting node at Nth position in a doubly linkedlist with optimization
 * Reversing Doubly Linkedlist with optimization
+* Get the list using recursion
