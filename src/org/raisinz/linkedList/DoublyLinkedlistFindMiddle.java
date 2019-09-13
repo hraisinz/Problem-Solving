@@ -83,6 +83,21 @@ public class DoublyLinkedlistFindMiddle {
         }
     }
 
+    private void getListRec(Node temp){
+        if(temp == null) return;
+        System.out.println(temp.getData());
+        temp=temp.getNext();
+        getListRec(temp);
+    }
+
+    public void getListRecursive(){
+        if(head == null){
+            System.out.println("List is Empty");
+            return;
+        }
+        getListRec(head);
+    }
+
 
     public static void main(String[] args) {
         DoublyLinkedlistFindMiddle doublyLinkedlistFindMiddle = new DoublyLinkedlistFindMiddle();
@@ -93,5 +108,7 @@ public class DoublyLinkedlistFindMiddle {
         doublyLinkedlistFindMiddle.insertAtEnd(50);
         System.out.println("Middle is : "+doublyLinkedlistFindMiddle.getMiddleNode());
         System.out.println("Middle Element using recursion : "+doublyLinkedlistFindMiddle.getMiddleNodeRecursive());
+        System.out.println("Getting list using recursion");
+        doublyLinkedlistFindMiddle.getListRecursive();
     }
 }
