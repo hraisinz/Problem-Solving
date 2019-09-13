@@ -54,6 +54,18 @@ public class DoublyLinkedlistFindMiddle {
 
     }
 
+
+    private int getMiddleRec(Node p,Node q){
+        if(q == null || q.getNext() == null) return p.getData();
+        p=p.getNext();
+        q=q.next.next;
+        return getMiddleRec(p,q);
+    }
+
+    public int getMiddleNodeRecursive(){
+        return getMiddleRec(head,head);
+    }
+
     public void getList(){
         if(head == null){
             System.out.println("List is Empty");
@@ -75,5 +87,6 @@ public class DoublyLinkedlistFindMiddle {
         doublyLinkedlistFindMiddle.insertAtEnd(40);
         doublyLinkedlistFindMiddle.insertAtEnd(50);
         System.out.println("Middle is : "+doublyLinkedlistFindMiddle.getMiddleNode());
+        System.out.println("Middle Element using recursion : "+doublyLinkedlistFindMiddle.getMiddleNodeRecursive());
     }
 }
