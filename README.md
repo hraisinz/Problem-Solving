@@ -90,3 +90,4 @@ Java Problem Solving
 * Reversing Doubly Linkedlist with optimization
 * Get the list using recursion
 * Get the middle node in a doubly linkedlist using recursion
+* Get the list of a doubly linkedlist using recursion
