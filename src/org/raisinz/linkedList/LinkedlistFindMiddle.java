@@ -46,6 +46,20 @@ public class LinkedlistFindMiddle {
 
     }
 
+
+    private int getMiddleRecursive(Node p,Node q){
+        if(q == null || q.next == null){
+            return p.getData();
+        }
+        p=p.getNext();
+        q=q.next.next;
+        return getMiddleRecursive(p,q);
+    }
+
+    public int getMiddleNodeRecursive(){
+        return getMiddleRecursive(head,head);
+    }
+
     public void getList(){
         Node temp=head;
         if(head == null){
@@ -65,7 +79,9 @@ public class LinkedlistFindMiddle {
         linkedlistFindMiddle.inserNodeAtEnd(30);
         linkedlistFindMiddle.inserNodeAtEnd(40);
         linkedlistFindMiddle.inserNodeAtEnd(50);
+        linkedlistFindMiddle.inserNodeAtEnd(60);
         System.out.println(linkedlistFindMiddle.getMiddleNode());
+        System.out.println("Get Middle Node Recursively : "+linkedlistFindMiddle.getMiddleNodeRecursive());
 
     }
 }

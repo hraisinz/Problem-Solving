@@ -46,12 +46,8 @@ class Stack{
     }
 
     void push(char v){
-        if (top == 0) {
-            System.out.println("Overflow");
-        }
-        else{
-            stk[--top]=v;
-        }
+        if (top == 0) System.out.println("Overflow");
+        else stk[--top]=v;
     }
 
     char pop(){
@@ -59,9 +55,7 @@ class Stack{
             System.out.println("Underflow");
             return 0;
         }
-        else{
-            return stk[++top -1];
-        }
+        else return stk[++top -1];
     }
 
     boolean isEmpty(){
