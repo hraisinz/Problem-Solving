@@ -63,6 +63,11 @@ public class DoublyLinkedlistFindMiddle {
     }
 
     public int getMiddleNodeRecursive(){
+        if(head == null)
+        {
+            System.out.println("List is Empty");
+            return 0;
+        }
         return getMiddleRec(head,head);
     }
 
