@@ -31,6 +31,11 @@ Searching
 * Binary Search
 * Recursive Binary Search
 
+Sorting Algorithms
+* Selection Sort Algorithm
+* Bubble Sort Algorithm
+* Insertion Sort Algorithm
+
 Linkedlist
 * Inserting a node at the end of the Linkedlist
 * Inserting a Node at the end of Linkedlist without traversing the list(Time Complexity)
@@ -99,7 +104,3 @@ Binary Search Tree
 * Preorder Binary Tree Traversal using iterative method
 * Postorder Binary Tree Traversal using iterative method
 
-Sorting Algorithms
-* Selection Sort Algorithm
-* Bubble Sort Algorithm
-* Insertion Sort Algorithm
