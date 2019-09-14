@@ -74,6 +74,7 @@ Sorting Algorithms
 * Bubble Sort Algorithm
 * Insertion Sort Algorithm
 
+Arrays
 * Removing duplicate from Array using Extra Space and Constant Space.
 * Linear Search - Searching an element from an array
 * Binary Search
