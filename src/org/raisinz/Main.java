@@ -1,5 +1,7 @@
 package org.raisinz;
 
+//Removing duplicate elements from sorted array using extra space
+
 public class Main {
 
     public void removeDuplicates(int[] sortedArr){
