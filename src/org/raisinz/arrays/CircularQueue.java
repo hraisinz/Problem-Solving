@@ -1,12 +1,12 @@
-package org.raisinz;
+package org.raisinz.arrays;
 
-public class Queue {
+public class CircularQueue {
 
     private int[] que;
     private int front;
     private int rear;
 
-    public Queue(int size){
+    public CircularQueue(int size){
         que=new int[size];
         front=-1;
         rear=-1;
@@ -18,7 +18,7 @@ public class Queue {
     }
 
     boolean isFull(){
-        if(rear == que.length-1) return true;
+        if((rear+1)%que.length == front) return true;
         else return false;
     }
     public void enque(int v){
@@ -31,7 +31,7 @@ public class Queue {
             rear=0;
         }
         else{
-            rear++;
+            rear=(rear+1)%que.length;
         }
         que[rear]=v;
     }
@@ -42,7 +42,7 @@ public class Queue {
             System.out.println("Queue is Empty");
             return -1;
         }
-        else if( front == rear){
+        else if(front == rear){
             temp=que[front];
             front=-1;
             rear=-1;
@@ -50,7 +50,7 @@ public class Queue {
         }
         else {
             temp=que[front];
-            front++;
+            front=(front+1)%que.length;
             return temp;
         }
     }
@@ -60,19 +60,33 @@ public class Queue {
             System.out.println("Queue is Empty");
             return;
         }
-        for (int i = front; i <=rear ; i++) {
-            System.out.println(que[i]);
+        if(rear>=front) {
+            for (int i = front; i <= rear; i++) {
+                System.out.println(que[i]);
+            }
+        }
+        else{
+            for (int i = front; i < que.length; i++) {
+                System.out.println(que[i]);
+            }
+            for (int i = 0; i <=rear ; i++) {
+                System.out.println(que[i]);
+            }
         }
     }
 
     public static void main(String[] args) {
 
-        Queue queue = new Queue(10);
-        queue.enque(10);
-        queue.enque(20);
-        queue.enque(30);
-        queue.enque(40);
-        System.out.println("Dequeue Element : "+queue.dequeue());
-        queue.getQueue();
+        CircularQueue circularQueue = new CircularQueue(5);
+        circularQueue.enque(10);
+        circularQueue.enque(20);
+        circularQueue.enque(30);
+        circularQueue.enque(40);
+        circularQueue.enque(50);
+        System.out.println("Dequeue Element : "+circularQueue.dequeue());
+        circularQueue.getQueue();
+        circularQueue.enque(10);
+        System.out.println("Dequeue Element : "+circularQueue.dequeue());
+        circularQueue.getQueue();
     }
 }

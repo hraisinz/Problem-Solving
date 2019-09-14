@@ -1,4 +1,4 @@
-package org.raisinz;
+package org.raisinz.arrays;
 
 public class FibonacciRecursion {
 
