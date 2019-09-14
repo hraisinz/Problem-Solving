@@ -19,6 +19,7 @@ public class Main {
         }
     }
 
+
     public static void main(String[] args) {
 
         int[] sortedArr={10,20,30,30,44,44,55,60,60,70,70,70,80};
