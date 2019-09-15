@@ -52,8 +52,8 @@ public class ReverseLinkedlist {
         head=prev;
     }
 
-    public void getList(){
-        Node temp=head;
+    public void getList(Node node){
+        Node temp=node;
         if(head == null){
             System.out.println("List is Empty");
         }
@@ -61,6 +61,26 @@ public class ReverseLinkedlist {
             System.out.println(temp.getData());
             temp=temp.getNext();
         }
+    }
+
+    private Node reverseListRecursion(Node current){
+        if(current == null){
+            return null;
+        }
+        else if(current.getNext() == null){
+            return current;
+        }
+        else{
+            Node nextNode=current.getNext();
+            current.next=null;
+            Node node = reverseListRecursion(nextNode);
+            nextNode.next=current;
+            return node;
+        }
+    }
+
+    public Node reverseListRec(){
+        return reverseListRecursion(head);
     }
 
     public static void main(String[] args) {
@@ -71,7 +91,8 @@ public class ReverseLinkedlist {
         reverseLinkedlist.inserNodeAtEnd(30);
         reverseLinkedlist.inserNodeAtEnd(40);
         reverseLinkedlist.inserNodeAtEnd(50);
-        reverseLinkedlist.reverseList();
-        reverseLinkedlist.getList();
+        //reverseLinkedlist.reverseList();
+        Node node = reverseLinkedlist.reverseListRec();
+        reverseLinkedlist.getList(node);
     }
 }
