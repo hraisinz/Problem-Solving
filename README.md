@@ -47,6 +47,7 @@ Linkedlist
 * Deleting a node from the middle of the linkedlist
 * Deleting a node at given position of the linkedlist
 * Reverse a linked list using iterative method
+* Reverse a linked list using Recursion
 * Find a middle of Linkedlist
 * Find a middle of Linkedlist using recursion
 * Find the length of Linkedlist using recursion
