@@ -22,6 +22,7 @@ public class LinkedlistInsertNodeAtEnd {
         }
     }
 
+    //Using iterative method
     public void inserNodeAtEnd(int data){
         Node node = new Node(data);
         if(head == null) {
@@ -47,6 +48,7 @@ public class LinkedlistInsertNodeAtEnd {
         }
     }
 
+    //Using Recursion
     private void inserNodeAtEndRecursion(Node current,Node node){
         if(head == null){
             head=node;
