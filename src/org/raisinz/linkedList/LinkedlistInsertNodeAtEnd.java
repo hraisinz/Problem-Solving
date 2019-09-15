@@ -46,6 +46,25 @@ public class LinkedlistInsertNodeAtEnd {
             temp=temp.getNext();
         }
     }
+
+    private void inserNodeAtEndRecursion(Node current,Node node){
+        if(head == null){
+            head=node;
+            return;
+        }
+        if(current.getNext() == null){
+            current.next=node;
+            return;
+        }
+        inserNodeAtEndRecursion(current.getNext(),node);
+    }
+
+    public void inserNodeAtEndRec(int data){
+        Node node = new Node(data);
+        inserNodeAtEndRecursion(head,node);
+    }
+
+
     public static void main(String[] args) {
         LinkedlistInsertNodeAtEnd linkedlist = new LinkedlistInsertNodeAtEnd();
         linkedlist.inserNodeAtEnd(10);
@@ -53,6 +72,15 @@ public class LinkedlistInsertNodeAtEnd {
         linkedlist.inserNodeAtEnd(30);
         linkedlist.inserNodeAtEnd(40);
         linkedlist.getList();
+
+        LinkedlistInsertNodeAtEnd linkedlistInsertNodeAtEnd = new LinkedlistInsertNodeAtEnd();
+        linkedlistInsertNodeAtEnd.inserNodeAtEndRec(100);
+        linkedlistInsertNodeAtEnd.inserNodeAtEndRec(200);
+        linkedlistInsertNodeAtEnd.inserNodeAtEndRec(300);
+        linkedlistInsertNodeAtEnd.inserNodeAtEndRec(400);
+        linkedlistInsertNodeAtEnd.inserNodeAtEndRec(500);
+        linkedlistInsertNodeAtEnd.inserNodeAtEndRec(600);
+        linkedlistInsertNodeAtEnd.getList();
     }
 }
 
