@@ -38,7 +38,7 @@ Sorting Algorithms
 
 Linkedlist
 * Inserting a node at the end of the Linkedlist
-* Inserting a node at the end of the Linkedlist using recursion
+* Inserting a node at the end of the Linkedlist and getting list using recursion
 * Inserting a Node at the end of Linkedlist without traversing the list(Time Complexity)
 * Inserting a Node in Linkedlist at the Nth position
 * Inserting a new Node at the middle of the linkedlist
