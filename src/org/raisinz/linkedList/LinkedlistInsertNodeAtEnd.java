@@ -64,6 +64,20 @@ public class LinkedlistInsertNodeAtEnd {
         inserNodeAtEndRecursion(head,node);
     }
 
+    private void getListRecursion(Node temp){
+        if(temp == null){
+            return;
+        }
+        System.out.println(temp.getData());
+        getListRecursion(temp.getNext());
+    }
+    public void getListRec(){
+        if(head == null){
+            System.out.println("List is Empty");
+            return;
+        }
+        getListRecursion(head);
+    }
 
     public static void main(String[] args) {
         LinkedlistInsertNodeAtEnd linkedlist = new LinkedlistInsertNodeAtEnd();
@@ -72,7 +86,7 @@ public class LinkedlistInsertNodeAtEnd {
         linkedlist.inserNodeAtEnd(30);
         linkedlist.inserNodeAtEnd(40);
         linkedlist.getList();
-
+        System.out.println("\nUsing Recursion");
         LinkedlistInsertNodeAtEnd linkedlistInsertNodeAtEnd = new LinkedlistInsertNodeAtEnd();
         linkedlistInsertNodeAtEnd.inserNodeAtEndRec(100);
         linkedlistInsertNodeAtEnd.inserNodeAtEndRec(200);
@@ -80,7 +94,7 @@ public class LinkedlistInsertNodeAtEnd {
         linkedlistInsertNodeAtEnd.inserNodeAtEndRec(400);
         linkedlistInsertNodeAtEnd.inserNodeAtEndRec(500);
         linkedlistInsertNodeAtEnd.inserNodeAtEndRec(600);
-        linkedlistInsertNodeAtEnd.getList();
+        linkedlistInsertNodeAtEnd.getListRec();
     }
 }
 
