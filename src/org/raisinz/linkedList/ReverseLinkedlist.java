@@ -83,6 +83,11 @@ public class ReverseLinkedlist {
         return reverseListRecursion(head);
     }
 
+    public void getListRecursion(Node node){
+        if(node == null) return;
+        System.out.println(node.getData());
+        getListRecursion(node.getNext());
+    }
     public static void main(String[] args) {
 
         ReverseLinkedlist reverseLinkedlist = new ReverseLinkedlist();
@@ -93,6 +98,7 @@ public class ReverseLinkedlist {
         reverseLinkedlist.inserNodeAtEnd(50);
         //reverseLinkedlist.reverseList();
         Node node = reverseLinkedlist.reverseListRec();
-        reverseLinkedlist.getList(node);
+        //reverseLinkedlist.getList(node);
+        reverseLinkedlist.getListRecursion(node);
     }
 }
