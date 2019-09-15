@@ -23,9 +23,7 @@ public class LinkedlistInsertNodeAtEnd {
     }
 
     public void inserNodeAtEnd(int data){
-
         Node node = new Node(data);
-
         if(head == null) {
             head=node;
             return;
@@ -41,6 +39,7 @@ public class LinkedlistInsertNodeAtEnd {
         Node temp=head;
         if(head == null){
             System.out.println("List is Empty");
+            return;
         }
         while (temp != null){
             System.out.println(temp.getData());
