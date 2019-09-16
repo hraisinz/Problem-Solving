@@ -48,7 +48,7 @@ public class LinkedlistSearchElement {
     public boolean searchElementRecursively(int element){
         if(head == null) return false;
         if(head.data == element) return true;
-        head=head.next;
+        head=head.getNext();
         return searchElementRecursively(element);
     }
 
