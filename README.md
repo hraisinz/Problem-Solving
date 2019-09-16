@@ -2,10 +2,10 @@
 Java Problem Solving
 
 Arrays
-* Removing duplicate from Array using Extra Space and Constant Space.
+* Removing the duplicates from an Array using Extra Space and Constant Space.
 * Count occurences of elements in sorted array with duplicates using Binary Search
-* Segregate 0's and 1's in array
-* Segregate 0's,1's and 2's in array
+* Segregate 0's and 1's in an array
+* Segregate 0's,1's and 2's in an array
 * Moving all negative numbers to beginning and positive numbers to end in Array
 * Rotating an array
 * Covert an array into Zig-Zag pattern
