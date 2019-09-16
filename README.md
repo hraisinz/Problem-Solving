@@ -86,7 +86,7 @@ Linkedlist
 * Get the middle node in a doubly linkedlist using recursion
 * Get the list of a doubly linkedlist using recursion
 * Find pair of given sum in a doubly linkedlist
-* Find max in a doubly linkedlist
+* Find max node in a doubly linkedlist
 * Implement a queue using Linkedlist
 
 Binary Search Tree
