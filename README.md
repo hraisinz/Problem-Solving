@@ -71,7 +71,7 @@ Linkedlist
 * Reverse a Linkedlist using Stack
 * Find the length of Doubly Linkedlist
 * Find the middle node of Doubly Linkedlist
-* Reverse a Doubly Linkedlist
+* Reversing a Doubly Linkedlist
 * Deleting node from head in a Doubly Linkedlist
 * Moving last node to front in a Doubly Linkedlist
 * Find the length of a Doubly Linkedlist
