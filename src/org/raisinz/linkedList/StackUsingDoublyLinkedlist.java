@@ -62,6 +62,22 @@ public class StackUsingDoublyLinkedlist {
         }
     }
 
+    private void getStackRec(Node temp){
+        if(temp == null){
+            return;
+        }
+        System.out.println(temp.getData());
+        getStackRec(temp.getNext());
+    }
+
+    public void getStackRecursion(){
+        if(head == null){
+            System.out.println("List is Empty");
+            return;
+        }
+        getStackRec(head);
+    }
+
     public static void main(String[] args) {
         StackUsingDoublyLinkedlist stackUsingDoublyLinkedlist = new StackUsingDoublyLinkedlist();
         stackUsingDoublyLinkedlist.push(10);
@@ -72,5 +88,7 @@ public class StackUsingDoublyLinkedlist {
         stackUsingDoublyLinkedlist.push(60);
         System.out.println("popped element : "+stackUsingDoublyLinkedlist.pop());
         stackUsingDoublyLinkedlist.getStack();
+        System.out.println("\n");
+        stackUsingDoublyLinkedlist.getStackRecursion();
     }
 }
