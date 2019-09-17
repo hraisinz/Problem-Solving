@@ -74,6 +74,25 @@ public class LinkedlistCountDuplicates {
         }
         return sum;
     }
+
+    public int sumOfNextGreaterNode(){
+
+        if(head == null){
+            return 0;
+        }
+        int sum=0;
+        Node t2=head;
+        while (t2.getNext() != null){
+            if(t2.getData() > t2.getNext().getData()){
+                sum=sum+t2.getData();
+            }
+            t2=t2.getNext();
+        }
+        if(t2.getData() > head.getData()){
+            sum=sum+t2.getData();
+        }
+        return sum;
+    }
     public static void main(String[] args) {
 
         LinkedlistCountDuplicates linkedlistCountDuplicates = new LinkedlistCountDuplicates();
@@ -85,5 +104,15 @@ public class LinkedlistCountDuplicates {
         linkedlistCountDuplicates.inserNodeAtEnd(20);
         System.out.println(linkedlistCountDuplicates.countDuplicates());
         System.out.println(linkedlistCountDuplicates.sumOfNonDuplicateNode());
+        LinkedlistCountDuplicates linkedlistCountDuplicates1 = new LinkedlistCountDuplicates();
+        linkedlistCountDuplicates1.inserNodeAtEnd(9);
+        linkedlistCountDuplicates1.inserNodeAtEnd(2);
+        linkedlistCountDuplicates1.inserNodeAtEnd(3);
+        linkedlistCountDuplicates1.inserNodeAtEnd(5);
+        linkedlistCountDuplicates1.inserNodeAtEnd(4);
+        linkedlistCountDuplicates1.inserNodeAtEnd(6);
+        linkedlistCountDuplicates1.inserNodeAtEnd(8);
+        System.out.println(linkedlistCountDuplicates1.sumOfNextGreaterNode());
+
     }
 }
