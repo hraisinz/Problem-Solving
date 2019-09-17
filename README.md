@@ -91,6 +91,7 @@ Linkedlist
 * Implement a queue using Linkedlist
 * Count duplicates in a Linkedlist
 * Sum of nonduplicates node in a Linkedlist
+* Sum of next greater node in a Linkedlist
 
 Binary Search Tree
 * Binary Serach Tree Implementation using iterative method
