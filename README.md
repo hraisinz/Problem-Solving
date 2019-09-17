@@ -90,6 +90,7 @@ Linkedlist
 * Find max node in a doubly linkedlist
 * Implement a queue using Linkedlist
 * Count duplicates in a Linkedlist
+* Sum of nonduplicates node in a Linkedlist
 
 Binary Search Tree
 * Binary Serach Tree Implementation using iterative method
