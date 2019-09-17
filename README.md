@@ -25,6 +25,7 @@ Arrays
 * Check for balanced parentheses using Stack
 * Array implementation of Queue
 * Implementation of Circular Queue
+* Check the given string is palindrome or not
 
 Searching
 * Linear Search - Searching an element from an array
