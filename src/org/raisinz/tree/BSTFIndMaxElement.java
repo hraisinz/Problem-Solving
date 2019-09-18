@@ -64,6 +64,7 @@ public class BSTFIndMaxElement {
         else if(root.getRight() == null) return root.getData();
         return getMaxRecursive(root.getRight());
     }
+
     public void getTree(Node root){
         if(root == null) return;
         getTree(root.getLeft());
