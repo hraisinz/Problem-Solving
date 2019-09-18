@@ -43,13 +43,11 @@ public class BSTDepthFirstSearch {
         root=insertRecursive(root,data);
     }
 
-
     public void getPreOrder(Node root){
         if(root == null) return;
         System.out.println(" "+root.getData());
         getPreOrder(root.getLeft());
         getPreOrder(root.getRight());
-
     }
 
     public void getInOrder(Node root){
@@ -57,7 +55,6 @@ public class BSTDepthFirstSearch {
         getInOrder(root.getLeft());
         System.out.println(" "+root.getData());
         getInOrder(root.getRight());
-
     }
 
     public void getPostOrder(Node root){
