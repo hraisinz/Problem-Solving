@@ -97,7 +97,7 @@ Binary Search Tree
 * Binary Serach Tree Implementation using iterative method
 * Binary Serach Tree Implementation using recursion
 * Searching an element in a Binary Search Tree
-* Find min element in a binary search tree
+* Find min element in a binary search tree using iterative
 * Find min element in a Binary Search Tree using recursion
 * Find max element in a binary search tree
 * Find max element in a binary search tree using recursion
