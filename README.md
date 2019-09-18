@@ -92,6 +92,7 @@ Linkedlist
 * Count duplicates in a Linkedlist
 * Sum of nonduplicates node in a Linkedlist
 * Sum of next greater node in a Linkedlist
+* Deleting a node from the middle of a doubly Linkedlist
 
 Binary Search Tree
 * Binary Serach Tree Implementation using iterative method
