@@ -85,6 +85,22 @@ public class DoublyLinkedlistDeleteMiddleNode {
         temp.prev=current.prev;
 
     }
+
+    public void deleteMiddleNodeReference(){
+        if(head == null)
+        {
+            System.out.println("List is Empty");
+            return;
+        }
+        Node p=head;
+        Node q=head;
+        while ( q != null && q.next!=null){
+            p=p.next;
+            q=q.next.next;
+        }
+        p.prev.next=p.next;
+        p.next.prev=p.prev;
+    }
     public static void main(String[] args) {
 
         DoublyLinkedlistDeleteMiddleNode doublyLinkedlistDeleteMiddleNode = new DoublyLinkedlistDeleteMiddleNode();
@@ -94,7 +110,9 @@ public class DoublyLinkedlistDeleteMiddleNode {
         doublyLinkedlistDeleteMiddleNode.insertAtEnd(40);
         doublyLinkedlistDeleteMiddleNode.insertAtEnd(50);
         doublyLinkedlistDeleteMiddleNode.insertAtEnd(60);
-        doublyLinkedlistDeleteMiddleNode.deleteMiddleNode();
+        doublyLinkedlistDeleteMiddleNode.insertAtEnd(70);
+        //doublyLinkedlistDeleteMiddleNode.deleteMiddleNode();
+        doublyLinkedlistDeleteMiddleNode.deleteMiddleNodeReference();
         doublyLinkedlistDeleteMiddleNode.getList();
     }
 }
