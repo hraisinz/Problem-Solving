@@ -10,10 +10,14 @@ public class SelectionSort {
                     index=j;
                 }
             }
-            int temp=arr[index];
-            arr[index]=arr[i];
-            arr[i]=temp;
+            swapElements(arr,index,i);
         }
+    }
+
+    private void swapElements(int[] a,int v1,int v2){
+        int temp=a[v1];
+        a[v1]=a[v2];
+        a[v2]=temp;
     }
 
     public void getElements(int[] arr){
