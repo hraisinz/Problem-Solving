@@ -1,5 +1,4 @@
 # Problem-Solving
-Java Problem Solving
 
 Arrays
 * Removing the duplicates from an Array using Extra Space and Constant Space.
