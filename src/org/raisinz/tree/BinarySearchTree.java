@@ -82,9 +82,7 @@ public class BinarySearchTree {
                 nodes.push(root);
                 root=root.getLeft();
             }
-            if(nodes.isEmpty()){
-                return;
-            }
+            if(nodes.isEmpty()) return;
             root=nodes.pop();
             System.out.println(root.getData());
             root=root.getRight();
