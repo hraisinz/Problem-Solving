@@ -18,11 +18,11 @@ public class RecursiveBinarysearch {
 
     public static void main(String[] args) {
         int values[] = {10,20,30,40,50,60};
-        int element = 50;
+        int key = 50;
         int intial=0;
         int last=values.length-1;
         RecursiveBinarysearch recursiveBinarysearch = new RecursiveBinarysearch();
-        recursiveBinarysearch.elementFound(recursiveBinarysearch.binarySearch(values, intial, last, element));
+        recursiveBinarysearch.elementFound(recursiveBinarysearch.binarySearch(values, intial, last, key));
 
     }
 }
