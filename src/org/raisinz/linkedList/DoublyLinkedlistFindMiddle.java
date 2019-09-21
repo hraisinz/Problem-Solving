@@ -54,7 +54,6 @@ public class DoublyLinkedlistFindMiddle {
 
     }
 
-
     private int getMiddleRec(Node p,Node q){
         if(q == null || q.getNext() == null) return p.getData();
         p=p.getNext();
