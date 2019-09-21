@@ -1,5 +1,7 @@
 package org.raisinz.tree;
 
+import java.util.Stack;
+
 public class BinarySearchTree {
 
     private Node root;
@@ -72,6 +74,23 @@ public class BinarySearchTree {
         }
     }
 
+    public void getTreeIterative(Node root){
+
+        Stack<Node> nodes = new Stack<>();
+        while (true){
+            while (root != null){
+                nodes.push(root);
+                root=root.getLeft();
+            }
+            if(nodes.isEmpty()){
+                return;
+            }
+            root=nodes.pop();
+            System.out.println(root.getData());
+            root=root.getRight();
+        }
+    }
+
     public static void main(String[] args) {
         BinarySearchTree binarySearchTree = new BinarySearchTree();
         binarySearchTree.insert(6);
@@ -82,6 +101,7 @@ public class BinarySearchTree {
         binarySearchTree.insert(8);
         binarySearchTree.insert(16);
         binarySearchTree.getTree(binarySearchTree.getRoot());
+        binarySearchTree.getTreeIterative(binarySearchTree.getRoot());
 
     }
 }
