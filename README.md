@@ -96,6 +96,7 @@ Linkedlist
 Binary Search Tree
 * Binary Serach Tree Implementation using iterative method
 * Binary Serach Tree Implementation using recursion
+* Displaying Binary Search Tree using Iterative
 * Searching an element in a Binary Search Tree
 * Find min element in a binary search tree using iterative
 * Find min element in a Binary Search Tree using recursion
