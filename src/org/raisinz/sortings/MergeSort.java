@@ -26,8 +26,8 @@ public class MergeSort {
     }
 
     public void getElements(){
-        for (int l = 0; l <c.length ; l++) {
-            System.out.println(c[l]);
+        for (int i = 0; i <c.length ; i++) {
+            System.out.println(c[i]);
         }
     }
     public static void main(String[] args){
