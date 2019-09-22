@@ -12,16 +12,8 @@ public class MergeSort {
         int length=m+n;
         int[] c=new int[length];
         while (i < m && j < n){
-            if(arr[i] < brr[j]){
-                c[k]=arr[i];
-                k++;
-                i++;
-            }
-            else{
-                c[k]=brr[j];
-                k++;
-                j++;
-            }
+            if(arr[i] < brr[j]) c[k++]=arr[i++];
+            else c[k++]=brr[j++];
         }
         for (; i < m; i++) {
             c[k]=arr[i];
