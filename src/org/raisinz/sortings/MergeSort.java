@@ -16,12 +16,10 @@ public class MergeSort {
             else crr[k++]=brr[j++];
         }
         for (; i < m; i++) {
-            crr[k]=arr[i];
-            k++;
+            crr[k++]=arr[i];
         }
         for (; j < n; j++) {
-            crr[k]=brr[j];
-            k++;
+            crr[k++]=brr[j];
         }
     }
 
