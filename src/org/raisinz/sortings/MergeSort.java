@@ -28,6 +28,7 @@ public class MergeSort {
             System.out.println(crr[i]);
         }
     }
+
     public static void main(String[] args){
         int[] a={2,8,15,18};
         int[] b={5,9,12,17};
