@@ -35,7 +35,7 @@ Sorting Algorithms
 * Selection Sort Algorithm
 * Bubble Sort Algorithm
 * Insertion Sort Algorithm
-* Two way merge sort Algorithm
+* Two way merge Sort
 
 Linkedlist
 * Inserting a node at the end of the Linkedlist
