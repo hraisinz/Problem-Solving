@@ -18,7 +18,7 @@ public class CircularQueue {
     }
 
     boolean isFull(){
-        if((rear+1)%que.length == front) return true;
+        if((rear+1) % que.length == front) return true;
         else return false;
     }
     public void enque(int v){
