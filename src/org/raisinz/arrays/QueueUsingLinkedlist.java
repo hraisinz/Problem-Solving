@@ -40,14 +40,10 @@ public class QueueUsingLinkedlist {
     }
 
     public int dequeue(){
-        if(front == null) {
-            return 0;
-        }
+        if(front == null) return 0;
         Node temp=front;
         front=front.getNext();
-        if(front == null){
-            this.rear=null;
-        }
+        if(front == null) this.rear=null;
         return temp.getData();
     }
 
