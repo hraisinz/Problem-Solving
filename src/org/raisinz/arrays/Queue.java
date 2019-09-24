@@ -31,7 +31,6 @@ public class Queue {
             rear=0;
         }
         else rear++;
-
         que[rear]=v;
     }
 
