@@ -4,12 +4,10 @@ public class MergeSort {
 
     private int[] crr;
 
-    public void MergeArray(int[] arr,int[] brr){
+    public void MergeArray(int[] arr,int[] brr,int m,int n){
         int i=0;
         int j=0;
         int k=0;
-        int m=arr.length;
-        int n=brr.length;
         crr =new int[m+n];
         while (i < m && j < n){
             if(arr[i] < brr[j]) crr[k++]=arr[i++];
@@ -32,8 +30,10 @@ public class MergeSort {
     public static void main(String[] args){
         int[] a={2,8,15,18};
         int[] b={5,9,12,17};
+        int m=a.length;
+        int n=b.length;
         MergeSort mergeSort = new MergeSort();
-        mergeSort.MergeArray(a,b);
+        mergeSort.MergeArray(a,b,m,n);
         mergeSort.getElements();
     }
 }
