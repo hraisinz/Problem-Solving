@@ -36,7 +36,6 @@ public class QueueUsingLinkedlist {
         }
         this.rear.next=node;
         this.rear=node;
-
     }
 
     public int dequeue(){
