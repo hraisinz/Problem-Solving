@@ -26,6 +26,7 @@ Arrays
 * Implementation of Circular Queue
 * Check the given string is palindrome or not
 * Tree Recursion
+* Nested Recursion
 
 Searching
 * Linear Search - Searching an element from an array
