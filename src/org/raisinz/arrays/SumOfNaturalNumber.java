@@ -10,8 +10,15 @@ public class SumOfNaturalNumber {
         }
         return s;
     }
+
+    //Using Recursion
+    int getSumRecursion(int n){
+        if(n == 0) return 0;
+        else return getSumRecursion(n-1)+n;
+    }
     public static void main(String[] args) {
         SumOfNaturalNumber sumOfNaturalNumber = new SumOfNaturalNumber();
         System.out.println(sumOfNaturalNumber.getSum(10));
+        System.out.println(sumOfNaturalNumber.getSumRecursion(5));
     }
 }
