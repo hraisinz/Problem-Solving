@@ -27,6 +27,7 @@ Arrays
 * Check the given string is palindrome or not
 * Tree Recursion
 * Nested Recursion
+* Sum of natural number using iterative method
 
 Searching
 * Linear Search - Searching an element from an array
