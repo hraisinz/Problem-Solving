@@ -16,9 +16,14 @@ public class SumOfNaturalNumber {
         if(n == 0) return 0;
         else return getSumRecursion(n-1)+n;
     }
+
+    int getSumMath(int n){
+        return n*(n+1)/2;
+    }
     public static void main(String[] args) {
         SumOfNaturalNumber sumOfNaturalNumber = new SumOfNaturalNumber();
         System.out.println(sumOfNaturalNumber.getSum(10));
         System.out.println(sumOfNaturalNumber.getSumRecursion(5));
+        System.out.println(sumOfNaturalNumber.getSumMath(5));
     }
 }
