@@ -29,6 +29,7 @@ Arrays
 * Nested Recursion
 * Sum of natural number using iterative method
 * Sum of natural number using Recursion
+* Taylor Series
 
 Searching
 * Linear Search - Searching an element from an array
