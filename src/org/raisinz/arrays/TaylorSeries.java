@@ -11,7 +11,6 @@ public class TaylorSeries {
         p=p*x;
         f=f*n;
         return r+(p/f);
-
     }
     public static void main(String[] args) {
 
