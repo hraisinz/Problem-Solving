@@ -49,7 +49,7 @@ public class BSTLevelorderIterative {
         root=insertRecursive(root,data);
     }
 
-    public void getInorder(){
+    public void getInorder(Node root){
         System.out.println("\nInorder");
         if(root == null) return;
         Stack<Node> stack = new Stack<>();
@@ -65,7 +65,7 @@ public class BSTLevelorderIterative {
         }
     }
 
-    public void getPreorder(){
+    public void getPreorder(Node root){
         System.out.println("\nPreorder");
         Stack<Node> stack = new Stack<>();
         stack.push(root);
@@ -81,7 +81,7 @@ public class BSTLevelorderIterative {
         }
     }
 
-    public void getPostorder(){
+    public void getPostorder(Node root){
         System.out.println("\nPostorder");
         Stack<Node> stack = new Stack<>();
         stack.push(root);
@@ -103,6 +103,7 @@ public class BSTLevelorderIterative {
             }
         }
     }
+
     public static void main(String[] args) {
 
         BSTLevelorderIterative bstLevelorderIterative = new BSTLevelorderIterative();
@@ -113,9 +114,9 @@ public class BSTLevelorderIterative {
         bstLevelorderIterative.insert(5);
         bstLevelorderIterative.insert(20);
         bstLevelorderIterative.insert(30);
-        bstLevelorderIterative.getInorder();
-        bstLevelorderIterative.getPreorder();
-        bstLevelorderIterative.getPostorder();
+        bstLevelorderIterative.getInorder(bstLevelorderIterative.getRoot());
+        bstLevelorderIterative.getPreorder(bstLevelorderIterative.getRoot());
+        bstLevelorderIterative.getPostorder(bstLevelorderIterative.getRoot());
 
     }
 }
