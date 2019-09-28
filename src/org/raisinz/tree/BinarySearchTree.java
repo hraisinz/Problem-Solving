@@ -66,7 +66,7 @@ public class BinarySearchTree {
         }
     }
 
-    //Recursion
+    //Using Recursion
     public void getTree(Node root){
         if(root != null){
             getTree(root.getLeft());
@@ -75,7 +75,7 @@ public class BinarySearchTree {
         }
     }
 
-    //Iterative
+    //Using Iterative
     public void getTreeIterative(Node root){
 
         Stack<Node> nodes = new Stack<>();
