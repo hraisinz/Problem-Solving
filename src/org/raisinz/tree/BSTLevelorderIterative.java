@@ -49,6 +49,7 @@ public class BSTLevelorderIterative {
         root=insertRecursive(root,data);
     }
 
+    //Using Iterative method
     public void getInorder(Node root){
         System.out.println("\nInorder");
         if(root == null) return;
@@ -65,6 +66,7 @@ public class BSTLevelorderIterative {
         }
     }
 
+    //Using Iterative method
     public void getPreorder(Node root){
         System.out.println("\nPreorder");
         Stack<Node> stack = new Stack<>();
@@ -81,6 +83,7 @@ public class BSTLevelorderIterative {
         }
     }
 
+    //Using Iterative method
     public void getPostorder(Node root){
         System.out.println("\nPostorder");
         Stack<Node> stack = new Stack<>();
