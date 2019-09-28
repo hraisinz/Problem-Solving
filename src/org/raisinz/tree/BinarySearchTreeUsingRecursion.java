@@ -48,7 +48,6 @@ public class BinarySearchTreeUsingRecursion {
             getTree(root.getLeft());
             System.out.println(" "+root.getData());
             getTree(root.getRight());
-
     }
 
     public static void main(String[] args) {
