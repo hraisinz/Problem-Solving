@@ -117,4 +117,5 @@ Binary Search Tree
 * Preorder Binary Tree Traversal using iterative method
 * Postorder Binary Tree Traversal using iterative method
 * Binary Search Tree Deletion
+* Searching element in a BST using iterative method
 
