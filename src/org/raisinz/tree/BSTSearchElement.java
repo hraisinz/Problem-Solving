@@ -57,6 +57,15 @@ public class BSTSearchElement {
         else if(data <= root.getData()) return search(root.getLeft(),data);
         else return  search(root.getRight(),data);
     }
+
+    public boolean searchIterative(Node root,int data){
+        while (root != null){
+            if(data == root.getData()) return true;
+            else if(data < root.getData()) root=root.getLeft();
+            else root=root.getRight();
+        }
+        return false;
+    }
     public static void main(String[] args) {
 
         BSTSearchElement bstSearchElement = new BSTSearchElement();
@@ -73,5 +82,6 @@ public class BSTSearchElement {
         if(found) System.out.println("Element found");
         else System.out.println("Not Found");
 
+        System.out.println(bstSearchElement.searchIterative(bstSearchElement.getRoot(),25));
     }
 }
