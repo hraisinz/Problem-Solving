@@ -119,3 +119,6 @@ Binary Search Tree
 * Binary Search Tree Deletion
 * Searching element in a BST using iterative method
 
+Binary Heap
+* Binary Heap Insertion
+
