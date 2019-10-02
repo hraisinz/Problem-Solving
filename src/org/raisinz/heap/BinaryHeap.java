@@ -3,12 +3,10 @@ package org.raisinz.heap;
 public class BinaryHeap {
 
     public void insertHeap(int[] a,int n){
-
         int temp;
         int i=n;
         temp=a[n];
         while (i > 0 && temp > a[i/2]){
-
             a[i]=a[i/2];
             i=i/2;
         }
@@ -16,7 +14,6 @@ public class BinaryHeap {
     }
 
     public void getHeap(int[] a){
-
         for (int i = 0; i <a.length ; i++) {
             System.out.println(a[i]);
         }
