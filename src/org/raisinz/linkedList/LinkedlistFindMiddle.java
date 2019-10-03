@@ -5,6 +5,10 @@ public class LinkedlistFindMiddle {
     private Node head;
     private Node tail;
 
+    public Node getHead() {
+        return head;
+    }
+
     private class Node{
         private int data;
         private Node next;
@@ -47,6 +51,16 @@ public class LinkedlistFindMiddle {
             t=t.getNext();
         }
         return m;
+    }
+
+    //Find MAX Using Recursion
+    public int getMaxRecursion(Node t){
+        int m=0;
+        if(t == null){
+            return m;
+        }
+        m=getMaxRecursion(t.getNext());
+        return m > t.getData()?m:t.getData();
     }
 
     //Find Min
@@ -124,5 +138,6 @@ public class LinkedlistFindMiddle {
         linkedlistFindMiddle.getListRec();
         System.out.println("Max : "+linkedlistFindMiddle.getMax());
         System.out.println("Min : "+linkedlistFindMiddle.getMin());
+        System.out.println("Max Recursion : "+linkedlistFindMiddle.getMaxRecursion(linkedlistFindMiddle.getHead()));
     }
 }
