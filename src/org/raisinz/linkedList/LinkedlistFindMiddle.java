@@ -35,6 +35,19 @@ public class LinkedlistFindMiddle {
         }
     }
 
+
+    //Find MAX
+    public int getMax(){
+        Node t=head;
+        int m=head.getData();
+        while (t != null){
+            if(t.getData() > m){
+                m=t.getData();
+            }
+            t=t.getNext();
+        }
+        return m;
+    }
     public int getMiddleNode(){
         Node p=head;
         Node q=head;
@@ -89,12 +102,13 @@ public class LinkedlistFindMiddle {
         linkedlistFindMiddle.inserNodeAtEnd(10);
         linkedlistFindMiddle.inserNodeAtEnd(20);
         linkedlistFindMiddle.inserNodeAtEnd(30);
-        linkedlistFindMiddle.inserNodeAtEnd(40);
+        linkedlistFindMiddle.inserNodeAtEnd(140);
         linkedlistFindMiddle.inserNodeAtEnd(50);
         linkedlistFindMiddle.inserNodeAtEnd(60);
         System.out.println(linkedlistFindMiddle.getMiddleNode());
         System.out.println("Get the Middle Node Recursively : "+linkedlistFindMiddle.getMiddleNodeRecursive());
         System.out.println("Getting List using recursion :");
         linkedlistFindMiddle.getListRec();
+        System.out.println(linkedlistFindMiddle.getMax());
     }
 }
