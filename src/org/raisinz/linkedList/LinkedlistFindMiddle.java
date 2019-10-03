@@ -62,7 +62,6 @@ public class LinkedlistFindMiddle {
         m=getMaxRecursion(t.getNext());
         return m > t.getData()?m:t.getData();
     }
-
     //Find Min
     public int getMin(){
         Node t=head;
