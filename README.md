@@ -59,6 +59,7 @@ Linkedlist
 * Find the length of Linkedlist using recursion
 * Find Max in a Linkedlist
 * Find Min in a Linkedlist
+* Find Max in a Linkedlist using Recursion
 * Searching an element in Linkedlist using itrative method
 * Searching an element in Linkedlist using recursion
 * Searching Nth Node in Linkedlist using iterative method
