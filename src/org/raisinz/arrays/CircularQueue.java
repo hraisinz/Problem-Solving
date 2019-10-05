@@ -30,9 +30,10 @@ public class CircularQueue {
             front=0;
             rear=0;
         }
-        else rear=(rear+1)%que.length;
-
-        que[rear]=v;
+        else {
+            rear=(rear+1)%que.length;
+            que[rear]=v;
+        }
     }
 
     public int dequeue(){
