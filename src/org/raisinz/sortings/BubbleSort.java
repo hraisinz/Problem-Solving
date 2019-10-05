@@ -9,9 +9,10 @@ public class BubbleSort {
         for (int i = 0; i <size ; i++) {
             for (int j = 1; j <(size-i) ; j++) {
                 if(arr[j-1] > arr[j]){
-                    temp=arr[j-1];
-                    arr[j-1]=arr[j];
-                    arr[j]=temp;
+//                    temp=arr[j-1];
+//                    arr[j-1]=arr[j];
+//                    arr[j]=temp;
+                    swap(arr,j-1,j);
                     flag=false;
                 }
             }
@@ -22,6 +23,11 @@ public class BubbleSort {
         }
     }
 
+    private void swap(int [] values,int v1,int v2){
+        int temp=values[v1];
+        values[v1]=values[v2];
+        values[v2]=temp;
+    }
 
     public void getElements(int[] arr){
         for (int i = 0; i < arr.length; i++) {
