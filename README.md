@@ -38,7 +38,7 @@ Searching
 
 Sorting Algorithms
 * Selection Sort Algorithm
-* Bubble Sort Algorithm
+* Bubble Sort Adaptive Algorithm
 * Insertion Sort Algorithm
 * Two-way Merge Sort
 
