@@ -5,16 +5,23 @@ public class BubbleSort {
     public void bubbleSortAlgo(int[] arr){
         int size=arr.length;
         int temp=0;
+        boolean flag=true;
         for (int i = 0; i <size ; i++) {
-            for (int j = 1; j <(size -i) ; j++) {
+            for (int j = 1; j <(size-i) ; j++) {
                 if(arr[j-1] > arr[j]){
                     temp=arr[j-1];
                     arr[j-1]=arr[j];
                     arr[j]=temp;
+                    flag=false;
                 }
+            }
+            if(flag == true) {
+                System.out.println("Element is already sorted");
+                break;
             }
         }
     }
+
 
     public void getElements(int[] arr){
         for (int i = 0; i < arr.length; i++) {
@@ -28,5 +35,7 @@ public class BubbleSort {
         BubbleSort bubbleSort = new BubbleSort();
         bubbleSort.bubbleSortAlgo(values);
         bubbleSort.getElements(values);
+        int[] values1={2,3,10,15,25,56};
+        bubbleSort.bubbleSortAlgo(values1);
     }
 }
