@@ -20,6 +20,5 @@ public class Linearsearch {
         int[] values={50,25,75,100,42,64};
         Linearsearch linearsearch = new Linearsearch();
         linearsearch.searchElement(values,100);
-
     }
 }
