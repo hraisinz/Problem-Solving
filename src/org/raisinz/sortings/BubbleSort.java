@@ -14,7 +14,7 @@ public class BubbleSort {
                 }
             }
             if(flag == true) {
-                System.out.println("Element is already sorted");
+                System.out.println("Element are sorted");
                 break;
             }
         }
@@ -24,13 +24,18 @@ public class BubbleSort {
     //Alternative
     public void bubblesort(int[] arr){
         int size=arr.length;
-        boolean flag=true;
+        boolean flag;
         for (int i = 0; i < size-1 ; i++) {
+            flag=true;
             for (int j = 0; j < size-1-i ; j++) {
                 if(arr[j]>arr[j+1]){
                     swap(arr,j,j+1);
                     flag=false;
                 }
+            }
+            if(flag == true){
+                System.out.println("Elements are sorted");
+                return;
             }
         }
     }
