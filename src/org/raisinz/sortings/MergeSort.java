@@ -21,6 +21,24 @@ public class MergeSort {
         }
     }
 
+
+    public void mergeElements(int[] arr,int l,int mid,int h){
+        int i=l;
+        int j=mid;
+        int k=l;
+        crr =new int[h];
+        while (i < mid && j < h){
+            if(arr[i] < arr[j]) crr[k++]= arr[i++];
+            else crr[k++]=arr[j++];
+        }
+        for (; i < mid; i++) {
+            crr[k++]=arr[i];
+        }
+        for (; j < h; j++) {
+            crr[k++]=arr[j];
+        }
+    }
+
     public void getElements(){
         for (int i = 0; i < crr.length ; i++) {
             System.out.println(crr[i]);
@@ -33,7 +51,14 @@ public class MergeSort {
         int m=a.length;
         int n=b.length;
         MergeSort mergeSort = new MergeSort();
-        mergeSort.MergeArray(a,b,m,n);
+//        mergeSort.MergeArray(a,b,m,n);
+//        mergeSort.getElements();
+
+        int[] arr={2,8,15,18,5,9,12,17};
+        int low=0;
+        int mid=(arr.length/2);
+        int high=arr.length;
+        mergeSort.mergeElements(arr,low,mid,high);
         mergeSort.getElements();
     }
 }
