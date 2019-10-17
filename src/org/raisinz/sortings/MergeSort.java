@@ -10,7 +10,7 @@ public class MergeSort {
         int k=0;
         crr =new int[m+n];
         while (i < m && j < n){
-            if(arr[i] < brr[j]) crr[k++]=arr[i++];
+            if(arr[i] < brr[j]) crr[k++]= arr[i++];
             else crr[k++]=brr[j++];
         }
         for (; i < m; i++) {
