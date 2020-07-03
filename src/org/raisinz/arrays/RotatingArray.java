@@ -6,9 +6,9 @@ public class RotatingArray {
     public void leftRotation(int[] values ,int rotation){
 
         int size=values.length-1;
-
-        for (int i = 0; i <rotation ; i++) {
-            int temp=values[0];
+        int temp;
+        for (int i = 0; i <rotation; i++) {
+            temp=values[0];
             for (int j = 0; j < size; j++) {
                 values[j]=values[j+1];
             }
@@ -25,7 +25,6 @@ public class RotatingArray {
     public static void main(String[] args) {
 
         int[] arr={1,2,3,4,5,6,7,8,9};
-        System.out.println(arr.length);
         int rotation=3;
         RotatingArray rotatingArray = new RotatingArray();
         rotatingArray.leftRotation(arr,rotation);

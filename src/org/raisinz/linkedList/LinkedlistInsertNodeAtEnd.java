@@ -42,7 +42,7 @@ public class LinkedlistInsertNodeAtEnd {
             System.out.println("List is Empty");
             return;
         }
-        while (temp != null){
+        while (temp!= null){
             System.out.println(temp.getData());
             temp=temp.getNext();
         }
