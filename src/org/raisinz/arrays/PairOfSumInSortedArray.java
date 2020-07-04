@@ -1,6 +1,6 @@
 package org.raisinz.arrays;
 
-public class PairOfSum {
+public class PairOfSumInSortedArray {
 
     public void findPair(int[]  values,int sum){
         int left=0;
@@ -18,7 +18,7 @@ public class PairOfSum {
 
         int[] arr={1,2,3,4,5,6,7,8,9,10};
         int sum=8;
-        PairOfSum pairOfSum = new PairOfSum();
+        PairOfSumInSortedArray pairOfSum = new PairOfSumInSortedArray();
         pairOfSum.findPair(arr,sum);
     }
 }
