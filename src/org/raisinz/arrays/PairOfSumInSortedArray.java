@@ -11,6 +11,7 @@ public class PairOfSumInSortedArray {
             else{
                 System.out.println("Pair is : "+values[left]+","+values[right]);
                 left++;
+                right--;
             }
         }
     }
