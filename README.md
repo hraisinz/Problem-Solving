@@ -30,6 +30,7 @@ Arrays
 * Sum of natural number using iterative method
 * Sum of natural number using Recursion
 * Taylor Series
+* Is Array Sorted
 
 Searching
 * Linear Search - Searching an element from an array
