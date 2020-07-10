@@ -31,7 +31,8 @@ Arrays
 * Sum of natural number using Recursion
 * Taylor Series
 * Is Array Sorted
-* Merging Two Sorted Array
+* Merging Two Sorted array
+* Union of two unsorted array
 
 Searching
 * Linear Search - Searching an element from an array
