@@ -35,6 +35,7 @@ Arrays
 * Union of two unsorted array
 * Union of two sorted array
 * Intersection of two unsorted array
+* Intersection of two sorted array
 
 Searching
 * Linear Search - Searching an element from an array
