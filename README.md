@@ -34,6 +34,7 @@ Arrays
 * Merging Two Sorted array
 * Union of two unsorted array
 * Union of two sorted array
+* Intersection of two unsorted array
 
 Searching
 * Linear Search - Searching an element from an array
